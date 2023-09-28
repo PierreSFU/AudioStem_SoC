@@ -1,0 +1,155 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 14 13:14:42 2022
+# Process ID: 14228
+# Current directory: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2904 C:\School\ENSC462_Final_Project\Final_Project\10_OLED\vivado_oled\vivado_oled.xpr
+# Log file: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado.log
+# Journal file: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.xpr
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/School/AppData/Roaming/Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_core'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_IP/OLED_DISPLAY_1.0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_zedboard/oled_controller_zedboard_1.0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller/oled_controller_1.0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_1.0'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_core'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_IP/OLED_DISPLAY_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_zedboard/oled_controller_zedboard_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/School/Xilinix_Vitis/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1114.023 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:module_ref:top:1.0 - top_0
+Successfully read diagram <design_1> from block design file <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/design_1/design_1.bd>
+write_bd_tcl -force C:/School/ENSC462_Final_Project/Final_Project/1_2_9_SD_DMA/vivado_DMA/oled_block_design.tcl
+INFO: [BD 5-148] Tcl file written out <C:/School/ENSC462_Final_Project/Final_Project/1_2_9_SD_DMA/vivado_DMA/oled_block_design.tcl>.
+
+save_bd_design_as oled_block_design
+Wrote  : <C:\School\ENSC462_Final_Project\Final_Project\10_OLED\vivado_oled\vivado_oled.srcs\sources_1\bd\oled_block_design\oled_block_design.bd> 
+INFO: [BD 41-2613] The output directory c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design for oled_block_design cannot be found.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate
+Wrote  : <C:\School\ENSC462_Final_Project\Final_Project\10_OLED\vivado_oled\vivado_oled.srcs\sources_1\bd\oled_block_design\oled_block_design.bd> 
+Wrote  : <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/ui/bd_9d91d593.ui> 
+save_bd_design_as: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1288.691 ; gain = 157.320
+add_files -norecurse C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd
+export_ip_user_files -of_objects  [get_files  C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd] -lib_map_path [list {modelsim=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/modelsim} {questa=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/questa} {riviera=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/riviera} {activehdl=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/activehdl}] -force -quiet
+open_bd_design {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd}
+Reading block design file <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:module_ref:top:1.0 - top_0
+Successfully read diagram <oled_block_design> from block design file <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd>
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+file delete -force C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+current_bd_design [get_bd_designs design_1]
+export_ip_user_files -of_objects  [get_files C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/design_1/design_1.bd
+Wrote  : <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+file delete -force C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/design_1
+file delete -force c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/design_1
+validate_bd_design -force
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate
+make_wrapper -files [get_files C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd] -top
+INFO: [BD 41-1662] The design 'oled_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\School\ENSC462_Final_Project\Final_Project\10_OLED\vivado_oled\vivado_oled.srcs\sources_1\bd\oled_block_design\oled_block_design.bd> 
+Wrote  : <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/ui/bd_9d91d593.ui> 
+VHDL Output written to : c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design/synth/oled_block_design.v
+VHDL Output written to : c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design/sim/oled_block_design.v
+VHDL Output written to : c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design/hdl/oled_block_design_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1476.000 ; gain = 187.309
+add_files -norecurse c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design/hdl/oled_block_design_wrapper.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Apr 14 13:27:05 2022] Launched synth_1...
+Run output will be captured here: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/synth_1/runme.log
+[Thu Apr 14 13:27:05 2022] Launched impl_1...
+Run output will be captured here: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/runme.log
+set_property top oled_block_design_wrapper [current_fileset]
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/synth_1
+
+update_compile_order -fileset sources_1
+set_property top top [current_fileset]
+set_property top_lib xil_defaultlib [current_fileset]
+set_property top_arch rtl [current_fileset]
+set_property top_file C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/src/top.vhd [current_fileset]
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Apr 14 13:27:52 2022] Launched synth_1...
+Run output will be captured here: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/synth_1/runme.log
+[Thu Apr 14 13:27:52 2022] Launched impl_1...
+Run output will be captured here: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+Cannot send datagram packet to /127.0.0.255
+OSError: [WinError 10049] The requested address is not valid in its context
+  File "chipscopy\tcf\services\local\LocatorService.py", line 703, in __sendDatagramPacket
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-13:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1496.934 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469501
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3050.605 ; gain = 1553.672
+set_property PROGRAM.FILE {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd}
+save_bd_design_as oled_block_design_1
+Wrote  : <C:\School\ENSC462_Final_Project\Final_Project\10_OLED\vivado_oled\vivado_oled.srcs\sources_1\bd\oled_block_design_1\oled_block_design_1.bd> 
+INFO: [BD 41-2613] The output directory c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design_1 for oled_block_design_1 cannot be found.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate
+Wrote  : <C:\School\ENSC462_Final_Project\Final_Project\10_OLED\vivado_oled\vivado_oled.srcs\sources_1\bd\oled_block_design_1\oled_block_design_1.bd> 
+Wrote  : <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/ui/bd_cacc8aa5.ui> 
+add_files -norecurse C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd
+export_ip_user_files -of_objects  [get_files  C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd] -lib_map_path [list {modelsim=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/modelsim} {questa=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/questa} {riviera=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/riviera} {activehdl=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 14 14:06:35 2022...

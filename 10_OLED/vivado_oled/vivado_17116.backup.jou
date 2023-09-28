@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 15 17:19:21 2022
+# Process ID: 17116
+# Current directory: C:/Users/pdrego/Downloads/Final_Project/10_OLED/vivado_oled
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35648 C:\Users\pdrego\Downloads\Final_Project\10_OLED\vivado_oled\vivado_oled.xpr
+# Log file: C:/Users/pdrego/Downloads/Final_Project/10_OLED/vivado_oled/vivado.log
+# Journal file: C:/Users/pdrego/Downloads/Final_Project/10_OLED/vivado_oled\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pdrego/Downloads/Final_Project/10_OLED/vivado_oled/vivado_oled.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 14 13:14:42 2022
+# Process ID: 14228
+# Current directory: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2904 C:\School\ENSC462_Final_Project\Final_Project\10_OLED\vivado_oled\vivado_oled.xpr
+# Log file: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado.log
+# Journal file: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/design_1/design_1.bd}
+write_bd_tcl -force C:/School/ENSC462_Final_Project/Final_Project/1_2_9_SD_DMA/vivado_DMA/oled_block_design.tcl
+save_bd_design_as oled_block_design
+add_files -norecurse C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd
+export_ip_user_files -of_objects  [get_files  C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd] -lib_map_path [list {modelsim=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/modelsim} {questa=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/questa} {riviera=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/riviera} {activehdl=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/activehdl}] -force -quiet
+open_bd_design {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+file delete -force C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+current_bd_design [get_bd_designs design_1]
+export_ip_user_files -of_objects  [get_files C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/design_1/design_1.bd
+file delete -force C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/design_1
+file delete -force c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/design_1
+validate_bd_design -force
+make_wrapper -files [get_files C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd] -top
+add_files -norecurse c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design/hdl/oled_block_design_wrapper.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top oled_block_design_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+set_property top_lib xil_defaultlib [current_fileset]
+set_property top_arch rtl [current_fileset]
+set_property top_file C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/src/top.vhd [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd}
+save_bd_design_as oled_block_design_1
+add_files -norecurse C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd
+export_ip_user_files -of_objects  [get_files  C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd] -lib_map_path [list {modelsim=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/modelsim} {questa=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/questa} {riviera=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/riviera} {activehdl=C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1

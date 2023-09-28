@@ -1,0 +1,8 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\DMA_block_design_wrapper\export\DMA_block_design_wrapper\sw\DMA_block_design_wrapper\boot\fsbl.elf
+	C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit
+	C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\DMA_block_design_wrapper\export\DMA_block_design_wrapper\hw\DMA_block_design_wrapper.bit
+	C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\final_project_hardware\Debug\final_project_hardware.elf
+}

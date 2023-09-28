@@ -1,0 +1,10 @@
+19:26:45 **** Incremental Build of configuration Debug for project dma_code_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 55528 C:/School/ENSC462_Final_Project/Final_Project/9_DMA/vitis_DMA/dma_test/export/dma_test/dma_test.xpfm standalone_domain C:/School/ENSC462_Final_Project/Final_Project/9_DMA/vitis_DMA/dma_code_system/Debug/system.bif
+sdcard_gen --xpfm C:/School/ENSC462_Final_Project/Final_Project/9_DMA/vitis_DMA/dma_test/export/dma_test/dma_test.xpfm --sys_config dma_test --bif C:/School/ENSC462_Final_Project/Final_Project/9_DMA/vitis_DMA/dma_code_system/Debug/system.bif --bitstream C:/School/ENSC462_Final_Project/Final_Project/9_DMA/vitis_DMA/dma_code/_ide/bitstream/design_1_wrapper.bit --elf C:/School/ENSC462_Final_Project/Final_Project/9_DMA/vitis_DMA/dma_code/Debug/dma_code.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/School/ENSC462_Final_Project/Final_Project/9_DMA/vitis_DMA/dma_code/_ide/bitstream/design_1_wrapper.bit
+Running C:/School/Xilinix_Vitis/Vitis/2020.2/bin/bootgen  -image C:/School/ENSC462_Final_Project/Final_Project/9_DMA/vitis_DMA/dma_code_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+19:26:49 Build Finished (took 4s.695ms)
+

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr  7 17:39:54 2022
+# Process ID: 8372
+# Current directory: U:/Spring2022/ENSC462/Labs/Final_Project/1_2_SD_Card/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10852 U:\Spring2022\ENSC462\Labs\Final_Project\1_2_SD_Card\vivado\vivado.xpr
+# Log file: U:/Spring2022/ENSC462/Labs/Final_Project/1_2_SD_Card/vivado/vivado.log
+# Journal file: U:/Spring2022/ENSC462/Labs/Final_Project/1_2_SD_Card/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/Spring2022/ENSC462/Labs/Final_Project/1_2_SD_Card/vivado/vivado.xpr
+open_hw_manager
+update_compile_order -fileset sources_1
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag

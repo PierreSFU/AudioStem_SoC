@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="dma_code" location="U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vitis_DMA/dma_code" platform="U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vitis_DMA/dma_test/export/dma_test/dma_test.xpfm" platformUID="xilinx:zed::0.0(custom)" systemProject="dma_code_system" sysConfig="dma_test" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="a6a1c58a6cc63d3fa62c4f7cc7f7ae23">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.56445912">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.469588987" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

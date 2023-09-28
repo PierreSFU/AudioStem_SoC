@@ -1,0 +1,34 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-203,-138",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port rst -pg 1 -lvl 0 -x -10 -y 50 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -10 -y 80 -defaultsOSRD
+preplace port h_sync -pg 1 -lvl 4 -x 840 -y 40 -defaultsOSRD
+preplace port v_sync -pg 1 -lvl 4 -x 840 -y 70 -defaultsOSRD
+preplace portBus vga_g -pg 1 -lvl 4 -x 840 -y 100 -defaultsOSRD
+preplace portBus vga_b -pg 1 -lvl 4 -x 840 -y 130 -defaultsOSRD
+preplace portBus vga_r -pg 1 -lvl 4 -x 840 -y 160 -defaultsOSRD
+preplace portBus switches -pg 1 -lvl 0 -x -10 -y 0 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 70 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 360 -y 120 -defaultsOSRD
+preplace inst video_controller_0 -pg 1 -lvl 3 -x 660 -y 120 -defaultsOSRD
+preplace netloc clk_wiz_0_locked 1 1 1 200 80n
+preplace netloc sys_clock_1 1 0 1 NJ 80
+preplace netloc rst_1 1 0 1 10J 50n
+preplace netloc video_controller_0_vga_g 1 3 1 810J 100n
+preplace netloc video_controller_0_vga_b 1 3 1 800J 130n
+preplace netloc video_controller_0_vga_r 1 3 1 NJ 160
+preplace netloc video_controller_0_v_sync 1 3 1 800J 70n
+preplace netloc video_controller_0_h_sync 1 3 1 790J 40n
+preplace netloc clk_wiz_0_clk_out1 1 1 2 N 60 510J
+preplace netloc util_vector_logic_0_Res 1 2 1 NJ 120
+preplace netloc switches_1 1 0 3 NJ 0 N 0 520
+levelinfo -pg 1 -10 110 360 660 840
+pagesize -pg 1 -db -bbox -sgen -150 -20 960 440
+"
+}
+0

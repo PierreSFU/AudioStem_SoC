@@ -1,0 +1,36 @@
+# Errors: 0, Warnings: 0
+# Compile of i2s.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of tb_i2s.vhd was successful.
+do wave.do
+# Cannot open macro file: wave.do
+do run.do wave
+# vsim -gui -onfinish stop -msgmode both -voptargs="+acc" work.tb_i2s 
+# Start time: 17:50:51 on Apr 15,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb_i2s(behavioral)
+# Loading work.i2s(rtl)
+# WARNING: No extended dataflow license exists
+# Error: Wave format file not found: "./wave.do"
+do wave.do
+# Cannot open macro file: wave.do
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# Break in Process line__71 at U:/ENSC462/Final_Project/i2s_submission/tb_i2s.vhd line 110
+do wave.do
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break in Process line__71 at U:/ENSC462/Final_Project/i2s_submission/tb_i2s.vhd line 110
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf U:/ENSC462/Final_Project/i2s_submission/wave.do
+# End time: 17:53:26 on Apr 15,2022, Elapsed time: 0:02:35
+# Errors: 0, Warnings: 1

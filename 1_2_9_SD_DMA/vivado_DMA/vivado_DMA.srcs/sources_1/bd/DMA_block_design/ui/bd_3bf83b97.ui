@@ -1,0 +1,78 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.665612",
+   "Default View_TopLeft":"-427,234",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 9 -x 2760 -y 720 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 9 -x 2760 -y 740 -defaultsOSRD
+preplace port oled_spi_clk -pg 1 -lvl 9 -x 2760 -y 560 -defaultsOSRD
+preplace port oled_spi_data -pg 1 -lvl 9 -x 2760 -y 580 -defaultsOSRD
+preplace port oled_vdd -pg 1 -lvl 9 -x 2760 -y 600 -defaultsOSRD
+preplace port oled_vbat -pg 1 -lvl 9 -x 2760 -y 620 -defaultsOSRD
+preplace port oled_reset_n -pg 1 -lvl 9 -x 2760 -y 640 -defaultsOSRD
+preplace port oled_dc_n -pg 1 -lvl 9 -x 2760 -y 660 -defaultsOSRD
+preplace port h_sync -pg 1 -lvl 9 -x 2760 -y 820 -defaultsOSRD
+preplace port v_sync -pg 1 -lvl 9 -x 2760 -y 840 -defaultsOSRD
+preplace portBus switches -pg 1 -lvl 0 -x -10 -y 1000 -defaultsOSRD
+preplace portBus vga_g -pg 1 -lvl 9 -x 2760 -y 880 -defaultsOSRD
+preplace portBus vga_b -pg 1 -lvl 9 -x 2760 -y 860 -defaultsOSRD
+preplace portBus vga_r -pg 1 -lvl 9 -x 2760 -y 900 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1730 -y 820 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 910 -y 120 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 540 -y 780 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 190 -y 440 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 2 -x 540 -y 350 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -x 1340 -y 590 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 4 -x 1340 -y 430 -defaultsOSRD
+preplace inst clk_wiz_OLED -pg 1 -lvl 6 -x 2090 -y 640 -defaultsOSRD
+preplace inst OLED_0 -pg 1 -lvl 8 -x 2620 -y 610 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 4 -x 1340 -y 240 -defaultsOSRD
+preplace inst VGA_0 -pg 1 -lvl 8 -x 2620 -y 860 -defaultsOSRD
+preplace inst clk_wiz_VGA -pg 1 -lvl 7 -x 2330 -y 890 -defaultsOSRD
+preplace inst util_vector_logic_OLED -pg 1 -lvl 7 -x 2330 -y 650 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 340 370 260 710 260 1170 340 1490 990 1970
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 1960
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 3 380 270 720 270 1120
+preplace netloc xlconcat_0_dout 1 4 1 1480 590n
+preplace netloc axi_dma_0_mm2s_introut 1 3 1 1130 160n
+preplace netloc axi_dma_0_s2mm_introut 1 3 1 1110 180n
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 360 460n
+preplace netloc switches_1 1 0 8 10J 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 1990J 890 2180J 820 2490
+preplace netloc clk_wiz_0_clk_out1 1 6 2 2180J 590 N
+preplace netloc OLED_0_oled_spi_clk 1 8 1 NJ 560
+preplace netloc OLED_0_oled_spi_data 1 8 1 NJ 580
+preplace netloc OLED_0_oled_vdd 1 8 1 NJ 600
+preplace netloc OLED_0_oled_vbat 1 8 1 NJ 620
+preplace netloc OLED_0_oled_reset_n 1 8 1 NJ 640
+preplace netloc OLED_0_oled_dc_n 1 8 1 NJ 660
+preplace netloc design_1_wrapper_0_h_sync 1 8 1 NJ 820
+preplace netloc design_1_wrapper_0_v_sync 1 8 1 NJ 840
+preplace netloc design_1_wrapper_0_vga_b 1 8 1 NJ 860
+preplace netloc design_1_wrapper_0_vga_g 1 8 1 NJ 880
+preplace netloc design_1_wrapper_0_vga_r 1 8 1 NJ 900
+preplace netloc clk_wiz_clk_out1 1 7 1 N 880
+preplace netloc processing_system7_0_FCLK_CLK1 1 5 1 1990 650n
+preplace netloc processing_system7_0_FCLK_CLK2 1 5 2 NJ 900 N
+preplace netloc util_vector_logic_RESET_Res 1 1 6 NJ 440 NJ 440 1140J 140 NJ 140 2000 880 N
+preplace netloc clk_wiz_VGA_locked 1 7 1 2500 840n
+preplace netloc util_vector_logic_OLED_Res 1 7 1 2480 610n
+preplace netloc clk_wiz_0_locked 1 6 1 NJ 650
+preplace netloc processing_system7_0_DDR 1 5 4 NJ 720 NJ 720 NJ 720 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 5 4 NJ 740 NJ 740 NJ 740 NJ
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1180 60n
+preplace netloc smartconnect_0_M00_AXI 1 4 1 1500 430n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 390 980 NJ 980 NJ 980 NJ 980 1980
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 690 70n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 3 390 240 NJ 240 1100
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 1160 80n
+preplace netloc axis_data_fifo_0_M_AXIS 1 2 2 700 250 1150J
+levelinfo -pg 1 -10 190 540 910 1340 1730 2090 2330 2620 2760
+pagesize -pg 1 -db -bbox -sgen -150 0 2900 1020
+"
+}
+{
+   "da_board_cnt":"6",
+   "da_clkrst_cnt":"3"
+}

@@ -1,0 +1,28 @@
+19:26:43 **** Incremental Build of configuration Debug for project dma_code ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/xaxidma_example_simple_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_example_simple_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/School/ENSC462_Final_Project/Final_Project/9_DMA/vitis_DMA/dma_test/export/dma_test/sw/dma_test/standalone_domain/bspinclude/include -MMD -MP -MF"src/xaxidma_example_simple_intr.d" -MT"src/xaxidma_example_simple_intr.o" -o "src/xaxidma_example_simple_intr.o" "../src/xaxidma_example_simple_intr.c"
+../src/xaxidma_example_simple_intr.c:85:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+   85 | #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+      |  ^~~~~~~
+'Finished building: ../src/xaxidma_example_simple_intr.c'
+' '
+'Building target: dma_code.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/School/ENSC462_Final_Project/Final_Project/9_DMA/vitis_DMA/dma_test/export/dma_test/sw/dma_test/standalone_domain/bsplib/lib -o "dma_code.elf"  ./src/platform.o ./src/xaxidma_example_simple_intr.o ./src/xaxidma_example_simple_poll.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_code.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_code.elf  |tee "dma_code.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34260	   2248	  24504	  61012	   ee54	dma_code.elf
+'Finished building: dma_code.elf.size'
+' '
+
+19:26:44 Build Finished (took 797ms)
+

@@ -1,0 +1,41 @@
+20:09:34 **** Incremental Build of configuration Debug for project sd_iic_config ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/sdTest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdTest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/School/ENSC462_Final_Project/Final_Project/1_2_SD_Card/vitis_workspace/platform_proj/export/platform_proj/sw/platform_proj/standalone_domain/bspinclude/include -MMD -MP -MF"src/sdTest.d" -MT"src/sdTest.o" -o "src/sdTest.o" "../src/sdTest.c"
+../src/sdTest.c: In function 'print_data':
+../src/sdTest.c:52:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   52 |  printf("Total file size : %u\n", file_size);
+      |  ^~~~~~
+../src/sdTest.c:52:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/sdTest.c:13:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   12 | #include "xil_cache.h"
+  +++ |+#include <stdio.h>
+   13 | 
+../src/sdTest.c: In function 'BurstReadWrite':
+../src/sdTest.c:163:4: warning: statement with no effect [-Wunused-value]
+  163 |    for(total_copied; total_copied < header_size; total_copied++){
+      |    ^~~
+../src/sdTest.c:169:11: warning: unused variable 'bufferFile' [-Wunused-variable]
+  169 |     char* bufferFile = headerBuffer;
+      |           ^~~~~~~~~~
+'Finished building: ../src/sdTest.c'
+' '
+'Building target: sd_iic_config.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/School/ENSC462_Final_Project/Final_Project/1_2_SD_Card/vitis_workspace/platform_proj/export/platform_proj/sw/platform_proj/standalone_domain/bsplib/lib -o "sd_iic_config.elf"  ./src/platform.o ./src/sdCard.o ./src/sdTest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sd_iic_config.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sd_iic_config.elf  |tee "sd_iic_config.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146576	   2592	  28000	 177168	  2b410	sd_iic_config.elf
+'Finished building: sd_iic_config.elf.size'
+' '
+
+20:09:35 Build Finished (took 609ms)
+

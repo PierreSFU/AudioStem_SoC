@@ -1,0 +1,1132 @@
+!SESSION 2022-04-15 14:52:06.356 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new
+
+This is a continuation of log file C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\.metadata\.bak_0.log
+Created Time: 2022-04-15 17:22:25.935
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:25.937
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:25.950
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:25.952
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:25.968
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:25.970
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:25.976
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:25.978
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:25.993
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:25.996
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248469501" && level == 0}], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:26.011
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248469501" && level == 0}], Result: [null, ]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:26.014
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:26.029
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:26.032
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:26.046
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:26.049
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:26.513
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:26.516
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:29.532
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:29.547
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:29.557
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:29.559
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:29.574
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:29.578
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:29.619
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:29.622
+!MESSAGE XSCT Command: [fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:31.950
+!MESSAGE XSCT command with result: [fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:31.967
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:31.978
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:31.980
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.006
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, DMA_block_design_wrapper_4]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.010
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.013
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.016
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.025
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.028
+!MESSAGE XSCT Command: [source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.033
+!MESSAGE XSCT command with result: [source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.035
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.315
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.318
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.325
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.328
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:22:32.350
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-56: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:28:44.550
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:28:44.574
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:28:44.606
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:28:44.629
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:28:44.632
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:28:44.635
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:28:44.638
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:28:44.641
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:46.144
+!MESSAGE XSCT Command: [disconnect tcfchan#19], Thread: Thread-1311
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:46.149
+!MESSAGE XSCT command with result: [disconnect tcfchan#19], Result: [null, ]. Thread: Thread-1311
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.664
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.675
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#20]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.678
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.688
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.690
+!MESSAGE XSCT Command: [version -server], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.694
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.697
+!MESSAGE XSCT Command: [version], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.700
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.703
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.710
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.713
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.729
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.732
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.739
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.742
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.758
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.761
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.768
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.771
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.787
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.790
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.798
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.802
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.817
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.821
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.829
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.832
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.847
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.851
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248469501" && level == 0}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.868
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248469501" && level == 0}], Result: [null, ]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.872
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.875
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.879
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.891
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.894
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.946
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:47.949
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:50.961
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:50.975
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:50.983
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:50.986
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:51.001
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:51.005
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:51.034
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:51.037
+!MESSAGE XSCT Command: [fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.367
+!MESSAGE XSCT command with result: [fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.387
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.398
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.402
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.415
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, DMA_block_design_wrapper_4]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.419
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.434
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.437
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.447
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.450
+!MESSAGE XSCT Command: [source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.458
+!MESSAGE XSCT command with result: [source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.462
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.805
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.808
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.816
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.819
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:32:53.823
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-59: Launching SystemDebugger_boot_me_pls_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:18.683
+!MESSAGE XSCT Command: [disconnect tcfchan#20], Thread: Thread-1353
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:18.703
+!MESSAGE XSCT command with result: [disconnect tcfchan#20], Result: [null, ]. Thread: Thread-1353
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.708
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.714
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#21]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.718
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.729
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.732
+!MESSAGE XSCT Command: [version -server], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.741
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.745
+!MESSAGE XSCT Command: [version], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.748
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.751
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.759
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.762
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.778
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.782
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.789
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.793
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.808
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.812
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.820
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.823
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.839
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.843
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.850
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.854
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.870
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.873
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.881
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.884
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.900
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.903
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.925
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.929
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.945
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.948
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248469501" && level == 0}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.964
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248469501" && level == 0}], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.968
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.972
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.975
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:19.997
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:20.001
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:20.481
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:20.485
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:23.493
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:23.507
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:23.516
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:23.520
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:23.535
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:23.539
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:23.569
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:23.573
+!MESSAGE XSCT Command: [fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.898
+!MESSAGE XSCT command with result: [fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.919
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.934
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.939
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.957
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, DMA_block_design_wrapper_4]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.962
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.967
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.971
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.982
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.985
+!MESSAGE XSCT Command: [source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.994
+!MESSAGE XSCT command with result: [source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:25.998
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:26.407
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:26.411
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:26.446
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:26.450
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:26.468
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:26.472
+!MESSAGE XSCT Command: [dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:26.950
+!MESSAGE XSCT command with result: [dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:26.954
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:27.002
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:27.114
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:27.126
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:27.130
+!MESSAGE XSCT Command: [con], Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:27.160
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-43: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:48.193
+!MESSAGE XSCT Command: [disconnect tcfchan#21], Thread: Thread-1403
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:33:48.199
+!MESSAGE XSCT command with result: [disconnect tcfchan#21], Result: [null, ]. Thread: Thread-1403
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.165
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.176
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#22]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.179
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.211
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.215
+!MESSAGE XSCT Command: [version -server], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.225
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.228
+!MESSAGE XSCT Command: [version], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.232
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.235
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.243
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.246
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.263
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.267
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.275
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.279
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.296
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.300
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.308
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.311
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.328
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.333
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.341
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.345
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.362
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.366
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.374
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.378
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.394
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.399
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.407
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.411
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.427
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.431
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248469501" && level == 0}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.448
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248469501" && level == 0}], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.452
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.456
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.460
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.485
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.489
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.597
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:02.601
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:05.612
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:05.627
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:05.636
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248469501]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:05.640
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:05.656
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 03727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:05.660
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:05.688
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:05.692
+!MESSAGE XSCT Command: [fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.030
+!MESSAGE XSCT command with result: [fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.049
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.060
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.064
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.078
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, DMA_block_design_wrapper_4]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.082
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.086
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.090
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.099
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.103
+!MESSAGE XSCT Command: [source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.108
+!MESSAGE XSCT command with result: [source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.112
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.408
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.412
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.424
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.428
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.438
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.442
+!MESSAGE XSCT Command: [dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.876
+!MESSAGE XSCT command with result: [dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.880
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:08.915
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:09.025
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:09.037
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:09.041
+!MESSAGE XSCT Command: [con], Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-04-15 17:34:09.069
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-63: Launching SystemDebugger_final_project_hardware_system
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:41:14.381
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:41:14.405
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:41:14.435
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:41:14.439
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:41:14.443
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:41:14.446
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:41:14.449
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:41:14.453
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:58:08.507
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:58:08.528
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:58:08.559
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:58:08.563
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:58:08.567
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:58:08.571
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:58:08.575
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 17:58:08.579
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 18:17:08.325
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 18:17:08.345
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 18:17:08.375
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 18:17:08.405
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 18:17:08.409
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 18:17:08.413
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 18:17:08.417
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-04-15 18:17:08.421
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="7fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="366"></NameColumnWidth>
+      <ValueColumnWidth column_width="172"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="AR_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">AR_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">AR_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : AR Channel  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Yellow</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="AW_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">AW_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">AW_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : AW Channel  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">MediumTurquoise</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="B_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">B_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">B_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : B Channel  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">SteelBlue</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="Interface_(i1:s0)_(axi_dma_0_M_AXI_S2MM)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Interface_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Interface_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : Interface  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="R_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">R_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">R_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : R Channel  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Gold</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="W_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">W_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">W_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : W Channel  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Teal</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="AR_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">AR_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">AR_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : AR Channel  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Yellow</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="AW_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">AW_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">AW_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : AW Channel  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">MediumTurquoise</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="B_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">B_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">B_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : B Channel  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">SteelBlue</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="Interface_(i1:s1)_(axi_dma_0_M_AXI_MM2S)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Interface_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Interface_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : Interface  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="R_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">R_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">R_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : R Channel  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Gold</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="W_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">W_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">W_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : W Channel  Events</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Teal</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group249" type="group">
+      <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Detail_Data">Interface_(i1:s0)_(axi_dma_0_M_AXI_S2MM)_tooltip</obj_property>
+      <obj_property name="Render_Data">Interface_(i1:s0)_(axi_dma_0_M_AXI_S2MM)</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <wvobject fp_name="group250" type="group">
+         <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : AR Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AR_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)_tooltip</obj_property>
+         <obj_property name="Render_Data">AR_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Yellow</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group258" type="group">
+         <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : R Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">R_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)_tooltip</obj_property>
+         <obj_property name="Render_Data">R_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Gold</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group263" type="group">
+         <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : AW Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AW_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)_tooltip</obj_property>
+         <obj_property name="Render_Data">AW_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">MediumTurquoise</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group271" type="group">
+         <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : W Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">W_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)_tooltip</obj_property>
+         <obj_property name="Render_Data">W_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Teal</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group277" type="group">
+         <obj_property name="label">slot_0 : axi_dma_0_M_AXI_S2MM : B Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">B_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)_tooltip</obj_property>
+         <obj_property name="Render_Data">B_Channel_(i1:s0)_(axi_dma_0_M_AXI_S2MM)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">SteelBlue</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group281" type="group">
+      <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Detail_Data">Interface_(i1:s1)_(axi_dma_0_M_AXI_MM2S)_tooltip</obj_property>
+      <obj_property name="Render_Data">Interface_(i1:s1)_(axi_dma_0_M_AXI_MM2S)</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <wvobject fp_name="group282" type="group">
+         <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : AR Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AR_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)_tooltip</obj_property>
+         <obj_property name="Render_Data">AR_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Yellow</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group290" type="group">
+         <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : R Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">R_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)_tooltip</obj_property>
+         <obj_property name="Render_Data">R_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Gold</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group296" type="group">
+         <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : AW Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">AW_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)_tooltip</obj_property>
+         <obj_property name="Render_Data">AW_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">MediumTurquoise</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group304" type="group">
+         <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : W Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">W_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)_tooltip</obj_property>
+         <obj_property name="Render_Data">W_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">Teal</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group309" type="group">
+         <obj_property name="label">slot_1 : axi_dma_0_M_AXI_MM2S : B Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">B_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)_tooltip</obj_property>
+         <obj_property name="Render_Data">B_Channel_(i1:s1)_(axi_dma_0_M_AXI_MM2S)</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+         <obj_property name="CustomSignalColor">SteelBlue</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group207" type="group">
+      <obj_property name="label">slot_2 : axis_data_fifo_0_M_AXIS : Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group208" type="group">
+         <obj_property name="label">slot_2 : axis_data_fifo_0_M_AXIS : T Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="DMA_block_design_i/system_ila_0/inst/net_slot_2_axis_tvalid" type="logic">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">DMA_block_design_i/system_ila_0/inst/net_slot_2_axis_tvalid</obj_property>
+            <obj_property name="ObjectShortName">net_slot_2_axis_tvalid</obj_property>
+            <obj_property name="label">slot_2 : axis_data_fifo_0_M_AXIS : TVALID</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject fp_name="DMA_block_design_i/system_ila_0/inst/net_slot_2_axis_tready" type="logic">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">DMA_block_design_i/system_ila_0/inst/net_slot_2_axis_tready</obj_property>
+            <obj_property name="ObjectShortName">net_slot_2_axis_tready</obj_property>
+            <obj_property name="label">slot_2 : axis_data_fifo_0_M_AXIS : TREADY</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject fp_name="DMA_block_design_i/system_ila_0/inst/net_slot_2_axis_tlast" type="logic">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">DMA_block_design_i/system_ila_0/inst/net_slot_2_axis_tlast</obj_property>
+            <obj_property name="ObjectShortName">net_slot_2_axis_tlast</obj_property>
+            <obj_property name="label">slot_2 : axis_data_fifo_0_M_AXIS : TLAST</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject fp_name="DMA_block_design_i/system_ila_0/inst/net_slot_2_axis_tdata" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">DMA_block_design_i/system_ila_0/inst/net_slot_2_axis_tdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_2_axis_tdata[31:0]</obj_property>
+            <obj_property name="label">slot_2 : axis_data_fifo_0_M_AXIS : TDATA</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject fp_name="DMA_block_design_i/system_ila_0/inst/net_slot_2_axis_tkeep" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">DMA_block_design_i/system_ila_0/inst/net_slot_2_axis_tkeep[3:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_2_axis_tkeep[3:0]</obj_property>
+            <obj_property name="label">slot_2 : axis_data_fifo_0_M_AXIS : TKEEP</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

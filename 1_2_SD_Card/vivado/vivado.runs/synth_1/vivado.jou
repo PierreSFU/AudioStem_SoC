@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr  1 16:08:16 2022
+# Process ID: 13276
+# Current directory: U:/Spring2022/ENSC462/Labs/Final_Project/1_2_SD_Card/vivado/vivado.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: U:/Spring2022/ENSC462/Labs/Final_Project/1_2_SD_Card/vivado/vivado.runs/synth_1/design_1_wrapper.vds
+# Journal file: U:/Spring2022/ENSC462/Labs/Final_Project/1_2_SD_Card/vivado/vivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

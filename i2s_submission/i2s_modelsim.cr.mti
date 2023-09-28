@@ -1,0 +1,31 @@
+U:/ENSC462/Final_Project/i2s_submission/tb_i2s.vhd {1 {vcom -work work -2008 -explicit U:/ENSC462/Final_Project/i2s_submission/tb_i2s.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:50:15 on Apr 15,2022
+vcom -reportprogress 300 -work work -2008 -explicit U:/ENSC462/Final_Project/i2s_submission/tb_i2s.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package ENV
+-- Compiling entity tb_i2s
+-- Compiling architecture Behavioral of tb_i2s
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity i2s
+End time: 17:50:15 on Apr 15,2022, Elapsed time: 0:00:00
+
+} {} {}} U:/ENSC462/Final_Project/i2s_submission/i2s.vhd {1 {vcom -work work -2008 -explicit U:/ENSC462/Final_Project/i2s_submission/i2s.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:50:14 on Apr 15,2022
+vcom -reportprogress 300 -work work -2008 -explicit U:/ENSC462/Final_Project/i2s_submission/i2s.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity i2s
+-- Compiling architecture rtl of i2s
+End time: 17:50:15 on Apr 15,2022, Elapsed time: 0:00:01
+
+} {} {}}

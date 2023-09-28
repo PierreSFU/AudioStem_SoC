@@ -1,0 +1,1127 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 15 13:11:21 2022
+# Process ID: 23352
+# Current directory: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11932 C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.xpr
+# Log file: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado.log
+# Journal file: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.xpr
+INFO: [Project 1-313] Project file moved from 'C:/School/ENSC462_Final_Project/Final_Project/1_2_9_SD_DMA/vivado_DMA' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pdrego/Downloads/Final_Project/IP_REPO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'DMA_block_design.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+DMA_block_design_VGA_0_0
+
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1129.781 ; gain = 1.184
+open_hw_manager
+update_compile_order -fileset sources_1
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469501
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2777.430 ; gain = 1547.090
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'DMA_block_design_i/system_ila_0/inst/ila_lib' at location 'uuid_380AA2DB50A254B596469DC52DE3F426' from probes file, since it cannot be found on the programmed device.
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+Reading block design file <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /axi_dma_0/M_AXIS_MM2S. Setting parameter on /axi_dma_0/M_AXIS_MM2S failed
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_OLED
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_OLED
+Adding component instance block -- xilinx.com:user:OLED:1.0 - OLED_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:user:VGA:1.0 - VGA_0
+Successfully read diagram <DMA_block_design> from block design file <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2992.938 ; gain = 184.738
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices -disable_eos_check [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd]
+launch_runs DMA_block_design_VGA_0_0_synth_1 -jobs 16
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ip/DMA_block_design_VGA_0_0/DMA_block_design_VGA_0_0.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+[Fri Apr 15 13:53:49 2022] Launched DMA_block_design_VGA_0_0_synth_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_VGA_0_0_synth_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/DMA_block_design_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/DMA_block_design_wrapper.xsa ...
+CRITICAL WARNING: [Vivado_Tcl 4-412] Exported hardware design may be stale because Block Design C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd is not generated
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2020.2/data\embeddedsw) loading 1 seconds
+CRITICAL WARNING: [Vivado 12-7009] BD 'DMA_block_design' is not in validated state. Please validate and re-generate the BD prior to generating a Hardware Platform. The BD can be validated in the GUI or by using Tcl command validate_bd_design in the Tcl console.
+CRITICAL WARNING: [Vivado_Tcl 4-412] Exported hardware design may be stale because Block Design C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd is not generated
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/DMA_block_design_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3469.465 ; gain = 153.141
+validate_bd_design
+ERROR: [BD 5-336] This command cannot be run, as the BD-design is locked. Locked reason(s):
+* Block design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+DMA_block_design_VGA_0_0
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pdrego/Downloads/Final_Project/IP_REPO'.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  C:/Users/pdrego/Downloads/Final_Project/IP_REPO [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pdrego/Downloads/Final_Project/IP_REPO'.
+create_bd_cell -type ip -vlnv xilinx.com:user:OLED:1.0 OLED_1
+delete_bd_objs [get_bd_cells OLED_1]
+create_bd_cell -type ip -vlnv sfu.ca:user:design_1_wrapper:1.0 design_1_wrapper_0
+set_property location {5 1705 809} [get_bd_cells design_1_wrapper_0]
+connect_bd_net [get_bd_ports switches] [get_bd_pins design_1_wrapper_0/sys_clock]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports switches] [get_bd_pins design_1_wrapper_0/sys_clock]'
+connect_bd_net [get_bd_ports switches] [get_bd_pins design_1_wrapper_0/switches]
+connect_bd_net [get_bd_pins design_1_wrapper_0/rst] [get_bd_pins util_vector_logic_OLED/Res]
+copy_bd_objs /  [get_bd_cells {clk_wiz_OLED}]
+INFO: [Common 17-365] Interrupt caught but 'copy_bd_objs' cannot be canceled. Please wait for command to finish.
+INFO: [Common 17-681] Processing pending cancel.
+delete_bd_objs [get_bd_cells clk_wiz_OLED1]
+startgroup
+connect_bd_net [get_bd_ports h_sync] [get_bd_pins design_1_wrapper_0/h_sync]
+connect_bd_net [get_bd_ports v_sync] [get_bd_pins design_1_wrapper_0/h_sync]
+connect_bd_net [get_bd_ports vga_g] [get_bd_pins design_1_wrapper_0/h_sync]
+connect_bd_net [get_bd_ports vga_r] [get_bd_pins design_1_wrapper_0/h_sync]
+connect_bd_net [get_bd_ports vga_b] [get_bd_pins design_1_wrapper_0/h_sync]
+endgroup
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets design_1_wrapper_0_h_sync]
+connect_bd_net [get_bd_ports h_sync] [get_bd_pins design_1_wrapper_0/h_sync]
+connect_bd_net [get_bd_ports v_sync] [get_bd_pins design_1_wrapper_0/v_sync]
+connect_bd_net [get_bd_ports vga_b] [get_bd_pins design_1_wrapper_0/vga_b]
+connect_bd_net [get_bd_ports vga_g] [get_bd_pins design_1_wrapper_0/vga_g]
+connect_bd_net [get_bd_ports vga_r] [get_bd_pins design_1_wrapper_0/vga_r]
+regenerate_bd_layout
+validate_bd_design
+ERROR: [BD 5-336] This command cannot be run, as the BD-design is locked. Locked reason(s):
+* Block design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+DMA_block_design_VGA_0_0
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins design_1_wrapper_0/sys_clock]
+undo
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins design_1_wrapper_0/sys_clock]'
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {148.5} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins design_1_wrapper_0/sys_clock]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardRule 102-10] create_bd_port -dir I sys_clock -type clk
+INFO: [BoardRule 102-5] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [BoardRule 102-6] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [BoardRule 102-15] connect_bd_net /sys_clock /clk_wiz/clk_in1
+INFO: [BoardRule 102-17] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {New External Port (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz/reset]
+INFO: [BoardRule 102-10] create_bd_port -dir I reset_rtl -type rst
+INFO: [BoardRule 102-7] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+INFO: [BoardRule 102-15] connect_bd_net /reset_rtl /clk_wiz/reset
+INFO: [BoardRule 102-19] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+WARNING: [BoardRule 102-1] Board automation did not generate location constraint for /clk_wiz/reset. Users may need to specify the location constraint manually.
+endgroup
+delete_bd_objs [get_bd_nets sys_clock_1]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clk_wiz/clk_in1]
+delete_bd_objs [get_bd_ports sys_clock]
+copy_bd_objs /  [get_bd_cells {util_vector_logic_OLED}]
+connect_bd_net [get_bd_pins clk_wiz/locked] [get_bd_pins util_vector_logic_OLED1/Op1]
+delete_bd_objs [get_bd_nets util_vector_logic_0_Res]
+connect_bd_net [get_bd_pins util_vector_logic_OLED1/Res] [get_bd_pins design_1_wrapper_0/rst]
+connect_bd_net [get_bd_pins util_vector_logic_OLED/Res] [get_bd_pins OLED_0/rst]
+regenerate_bd_layout
+delete_bd_objs [get_bd_cells VGA_0]
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1
+
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 3703.570 ; gain = 135.055
+delete_bd_objs [get_bd_nets reset_rtl_1]
+connect_bd_net [get_bd_ports rst] [get_bd_pins clk_wiz/reset]
+delete_bd_objs [get_bd_ports reset_rtl]
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 3761.168 ; gain = 27.578
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3922.082 ; gain = 160.914
+set_property name VGA_0 [get_bd_cells design_1_wrapper_0]
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 3949.324 ; gain = 15.305
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {148.5000} CONFIG.MMCM_DIVCLK_DIVIDE {4} CONFIG.MMCM_CLKFBOUT_MULT_F {37.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.CLKOUT1_JITTER {217.614} CONFIG.CLKOUT1_PHASE_ERROR {245.344}] [get_bd_cells clk_wiz]
+endgroup
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Common 17-365] Interrupt caught but 'make_wrapper' cannot be canceled. Please wait for command to finish.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 4008.066 ; gain = 12.984
+INFO: [Common 17-681] Processing pending cancel.
+set_property name util_vector_logic_vga [get_bd_cells util_vector_logic_OLED1]
+set_property name clk_wiz_VGA [get_bd_cells clk_wiz]
+set_property name util_vector_logic_vsga [get_bd_cells util_vector_logic_vga]
+set_property name util_vector_logic_VGA [get_bd_cells util_vector_logic_vsga]
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 4046.871 ; gain = 0.000
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+reset_run DMA_block_design_system_ila_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_system_ila_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/synth/DMA_block_design_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/synth/DMA_block_design_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_VGA .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_VGA .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_auto_pc_0/DMA_block_design_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_clk_wiz_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_design_1_wrapper_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_smartconnect_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_system_ila_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_util_vector_logic_OLED_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_auto_pc_0, cache-ID = 291821656b379a66; cache size = 246.703 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_smartconnect_0_0, cache-ID = 3d77241ed5449764; cache size = 246.703 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_util_vector_logic_OLED_0, cache-ID = 6633f395641171b5; cache size = 246.703 MB.
+[Fri Apr 15 14:55:32 2022] Launched DMA_block_design_system_ila_0_0_synth_1, DMA_block_design_clk_wiz_2_synth_1, DMA_block_design_design_1_wrapper_0_0_synth_1, synth_1...
+Run output will be captured here:
+DMA_block_design_system_ila_0_0_synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_system_ila_0_0_synth_1/runme.log
+DMA_block_design_clk_wiz_2_synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_clk_wiz_2_synth_1/runme.log
+DMA_block_design_design_1_wrapper_0_0_synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_design_1_wrapper_0_0_synth_1/runme.log
+synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1/runme.log
+[Fri Apr 15 14:55:32 2022] Launched impl_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 4074.715 ; gain = 27.844
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1
+
+reset_run DMA_block_design_system_ila_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_system_ila_0_0_synth_1
+
+reset_run DMA_block_design_clk_wiz_2_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_clk_wiz_2_synth_1
+
+reset_run DMA_block_design_design_1_wrapper_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_design_1_wrapper_0_0_synth_1
+
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {Custom}] [get_bd_cells clk_wiz_VGA]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 4103.195 ; gain = 8.215
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/synth/DMA_block_design_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/synth/DMA_block_design_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_VGA .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_auto_pc_0/DMA_block_design_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_clk_wiz_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_design_1_wrapper_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_smartconnect_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_system_ila_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_auto_pc_0, cache-ID = 291821656b379a66; cache size = 246.703 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_smartconnect_0_0, cache-ID = 3d77241ed5449764; cache size = 246.703 MB.
+[Fri Apr 15 14:57:56 2022] Launched DMA_block_design_system_ila_0_0_synth_1, DMA_block_design_clk_wiz_2_synth_1, DMA_block_design_design_1_wrapper_0_0_synth_1, synth_1...
+Run output will be captured here:
+DMA_block_design_system_ila_0_0_synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_system_ila_0_0_synth_1/runme.log
+DMA_block_design_clk_wiz_2_synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_clk_wiz_2_synth_1/runme.log
+DMA_block_design_design_1_wrapper_0_0_synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_design_1_wrapper_0_0_synth_1/runme.log
+synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1/runme.log
+[Fri Apr 15 14:57:56 2022] Launched impl_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 4134.816 ; gain = 13.738
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+delete_bd_objs [get_bd_nets clk_1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins clk_wiz_OLED/clk_in1]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins clk_wiz_OLED/clk_in1]'
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_OLED/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_OLED]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardRule 102-10] create_bd_port -dir I sys_clock -type clk
+INFO: [BoardRule 102-5] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [BoardRule 102-6] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [BoardRule 102-15] connect_bd_net /sys_clock /clk_wiz_OLED/clk_in1
+INFO: [BoardRule 102-17] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_VGA/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_VGA]
+INFO: [BoardRule 102-15] connect_bd_net /sys_clock /clk_wiz_VGA/clk_in1
+INFO: [BoardRule 102-17] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+endgroup
+delete_bd_objs [get_bd_ports clk]
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -fileset [get_filesets sources_1] -inst_template
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Common 17-365] Interrupt caught but 'make_wrapper' cannot be canceled. Please wait for command to finish.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 4157.266 ; gain = 0.000
+INFO: [Common 17-681] Processing pending cancel.
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1
+
+reset_run DMA_block_design_system_ila_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_system_ila_0_0_synth_1
+
+reset_run DMA_block_design_clk_wiz_2_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/synth/DMA_block_design_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/synth/DMA_block_design_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_VGA .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_auto_pc_0/DMA_block_design_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_clk_wiz_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_smartconnect_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_system_ila_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_auto_pc_0, cache-ID = 291821656b379a66; cache size = 269.171 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_smartconnect_0_0, cache-ID = 3d77241ed5449764; cache size = 269.171 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_system_ila_0_0, cache-ID = b3e5c8676dbf2b99; cache size = 269.171 MB.
+config_ip_cache: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 4198.867 ; gain = 14.645
+[Fri Apr 15 15:07:01 2022] Launched DMA_block_design_clk_wiz_2_synth_1, synth_1...
+Run output will be captured here:
+DMA_block_design_clk_wiz_2_synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_clk_wiz_2_synth_1/runme.log
+synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1/runme.log
+[Fri Apr 15 15:07:01 2022] Launched impl_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 4198.867 ; gain = 22.293
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {100} CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {100} CONFIG.PCW_EN_CLK1_PORT {1} CONFIG.PCW_EN_CLK2_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+delete_bd_objs [get_bd_ports sys_clock]
+delete_bd_objs [get_bd_nets sys_clock_1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins clk_wiz_OLED/clk_in1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK2] [get_bd_pins clk_wiz_VGA/clk_in1]
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 4246.250 ; gain = 11.266
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1
+
+reset_run DMA_block_design_processing_system7_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_processing_system7_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/synth/DMA_block_design_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/synth/DMA_block_design_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_auto_pc_0/DMA_block_design_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_processing_system7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_smartconnect_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_system_ila_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_auto_pc_0, cache-ID = 291821656b379a66; cache size = 269.235 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_system_ila_0_0, cache-ID = b3e5c8676dbf2b99; cache size = 269.235 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_smartconnect_0_0, cache-ID = 3d77241ed5449764; cache size = 269.235 MB.
+config_ip_cache: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4317.703 ; gain = 12.672
+[Fri Apr 15 15:15:07 2022] Launched DMA_block_design_processing_system7_0_0_synth_1, synth_1...
+Run output will be captured here:
+DMA_block_design_processing_system7_0_0_synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/DMA_block_design_processing_system7_0_0_synth_1/runme.log
+synth_1: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1/runme.log
+[Fri Apr 15 15:15:07 2022] Launched impl_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 4317.703 ; gain = 71.453
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z020_1 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+delete_bd_objs [get_bd_nets rst_1]
+delete_bd_objs [get_bd_ports rst]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins clk_wiz_VGA/reset]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins clk_wiz_OLED/reset]
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+set_property -dict [list CONFIG.FREQ_HZ {100000000}] [get_bd_pins VGA_0/sys_clock]
+startgroup
+endgroup
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+ERROR: [BD 41-238] Port/Pin property POLARITY does not match between /clk_wiz_VGA/reset(ACTIVE_HIGH) and /processing_system7_0/FCLK_RESET0_N(ACTIVE_LOW)
+ERROR: [BD 41-238] Port/Pin property POLARITY does not match between /clk_wiz_OLED/reset(ACTIVE_HIGH) and /processing_system7_0/FCLK_RESET0_N(ACTIVE_LOW)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /VGA_0/sys_clock(100000000) and /clk_wiz_VGA/clk_out1(148500000)
+validate_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 4317.758 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+set_property -dict [list CONFIG.FREQ_HZ {148500000}] [get_bd_pins VGA_0/sys_clock]
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+ERROR: [BD 41-238] Port/Pin property POLARITY does not match between /clk_wiz_VGA/reset(ACTIVE_HIGH) and /processing_system7_0/FCLK_RESET0_N(ACTIVE_LOW)
+ERROR: [BD 41-238] Port/Pin property POLARITY does not match between /clk_wiz_OLED/reset(ACTIVE_HIGH) and /processing_system7_0/FCLK_RESET0_N(ACTIVE_LOW)
+validate_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 4317.758 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+copy_bd_objs /  [get_bd_cells {util_vector_logic_VGA}]
+set_property name util_vector_logic_RESET [get_bd_cells util_vector_logic_VGA1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins util_vector_logic_RESET/Op1]
+set_property location {7 2352 688} [get_bd_cells util_vector_logic_RESET]
+disconnect_bd_net /processing_system7_0_FCLK_RESET0_N [get_bd_pins clk_wiz_VGA/reset]
+connect_bd_net [get_bd_pins util_vector_logic_RESET/Res] [get_bd_pins clk_wiz_VGA/reset]
+disconnect_bd_net /processing_system7_0_FCLK_RESET0_N [get_bd_pins clk_wiz_OLED/reset]
+connect_bd_net [get_bd_pins util_vector_logic_RESET/Res] [get_bd_pins clk_wiz_OLED/reset]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 4334.285 ; gain = 16.527
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/synth/DMA_block_design_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/synth/DMA_block_design_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_RESET .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_auto_pc_0/DMA_block_design_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_smartconnect_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_system_ila_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_util_vector_logic_VGA_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_auto_pc_0, cache-ID = 291821656b379a66; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_smartconnect_0_0, cache-ID = 3d77241ed5449764; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_system_ila_0_0, cache-ID = b3e5c8676dbf2b99; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_util_vector_logic_VGA_0, cache-ID = 6633f395641171b5; cache size = 270.066 MB.
+config_ip_cache: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4376.340 ; gain = 14.527
+[Fri Apr 15 15:36:58 2022] Launched synth_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1/runme.log
+[Fri Apr 15 15:36:58 2022] Launched impl_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 4376.340 ; gain = 42.055
+set_property PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"DMA_block_design_i/system_ila_0/inst/ila_lib"}]]
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_ar_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_aw_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_b_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_r_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_w_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_ar_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_aw_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_b_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_r_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_w_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_apc_pc_asserted was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_apc_pc_status was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_ar_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_ar_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_araddr was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_arburst was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_arcache was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_arlen was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_arlock was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_arprot was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_arqos was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_arregion was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_arsize was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_aw_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_aw_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_awaddr was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_awburst was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_awcache was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_awlen was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_awlock was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_awprot was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_awqos was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_awregion was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_awsize was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_b_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_b_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_bresp was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_r_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_r_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_rdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_rresp was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_w_ctrl was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_wdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_4_axi_wstrb was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_ar_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_araddr was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arcache was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arlen was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arprot was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arsize was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_aw_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awaddr was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awcache was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awlen was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awprot was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awsize was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_b_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_bready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_bresp was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_bvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_r_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_rdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_rlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_rready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_rvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_wdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_wlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_wready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_wstrb was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_wvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_ar_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_araddr was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arcache was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arlen was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arprot was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arsize was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_aw_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awaddr was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awcache was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awlen was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awprot was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awsize was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_b_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_bready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_bvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_r_cnt was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_rdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_rlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_rready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_rresp was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_rvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_wdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_wlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_wready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_wvalid was not found in the design.
+WARNING: Simulation object Interface_(i1:s2)_(axi_dma_0_M_AXIS_MM2S) was not found in the design.
+WARNING: Simulation object T_Channel_(i1:s2)_(axi_dma_0_M_AXIS_MM2S) was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_2_axis_tdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_2_axis_tkeep was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_2_axis_tlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_2_axis_tready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_2_axis_tvalid was not found in the design.
+WARNING: Simulation object Interface_(i1:s3)_(axis_data_fifo_0_M_AXIS) was not found in the design.
+WARNING: Simulation object T_Channel_(i1:s3)_(axis_data_fifo_0_M_AXIS) was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_3_axis_tdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_3_axis_tkeep was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_3_axis_tlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_3_axis_tready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_3_axis_tvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_araddr was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arlen was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arsize was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arcache was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_arprot was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_rvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_rready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_rlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_rdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awaddr was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awlen was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awsize was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awcache was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_awprot was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_wvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_wready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_wlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_wdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_wstrb was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_bvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_bready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_0_axi_bresp was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_araddr was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arlen was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arsize was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arcache was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_arprot was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_rvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_rready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_rlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_rdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_rresp was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awaddr was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awlen was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awsize was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awcache was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_awprot was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_wvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_wready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_wlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_wdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_bvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_1_axi_bready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_2_axis_tvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_2_axis_tready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_2_axis_tlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_2_axis_tdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_2_axis_tkeep was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_3_axis_tvalid was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_3_axis_tready was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_3_axis_tlast was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_3_axis_tdata was not found in the design.
+WARNING: Simulation object design_1_i/system_ila_0/inst/net_slot_3_axis_tkeep was not found in the design.
+Processed interface axi_dma_0_M_AXI_S2MM_ila1_slot0
+Processed interface axi_dma_0_M_AXI_MM2S_ila1_slot1
+Processing Interface axis_data_fifo_0_M_AXIS_ila1_slot2
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+delete_bd_objs [get_bd_cells util_vector_logic_RESET]
+connect_bd_net [get_bd_pins rst_ps7_0_100M/peripheral_reset] [get_bd_pins clk_wiz_VGA/reset]
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 4449.664 ; gain = 0.000
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/synth/DMA_block_design_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/synth/DMA_block_design_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_auto_pc_0/DMA_block_design_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_smartconnect_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_system_ila_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_auto_pc_0, cache-ID = 291821656b379a66; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_smartconnect_0_0, cache-ID = 3d77241ed5449764; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_system_ila_0_0, cache-ID = b3e5c8676dbf2b99; cache size = 270.066 MB.
+config_ip_cache: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4449.664 ; gain = 0.000
+[Fri Apr 15 15:47:16 2022] Launched synth_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1/runme.log
+[Fri Apr 15 15:47:16 2022] Launched impl_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 4449.664 ; gain = 0.000
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+set_property PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+Processed interface axi_dma_0_M_AXI_S2MM_ila1_slot0
+Processed interface axi_dma_0_M_AXI_MM2S_ila1_slot1
+Processed interface axis_data_fifo_0_M_AXIS_ila1_slot2
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+set_property PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+Processed interface axi_dma_0_M_AXI_S2MM_ila1_slot0
+Processed interface axi_dma_0_M_AXI_MM2S_ila1_slot1
+Processed interface axis_data_fifo_0_M_AXIS_ila1_slot2
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+delete_bd_objs [get_bd_nets clk_wiz_locked] [get_bd_nets util_vector_logic_OLED1_Res] [get_bd_cells util_vector_logic_VGA]
+connect_bd_net [get_bd_pins clk_wiz_VGA/locked] [get_bd_pins VGA_0/rst]
+delete_bd_objs [get_bd_nets clk_wiz_0_locked] [get_bd_nets util_vector_logic_OLED_Res] [get_bd_cells util_vector_logic_OLED]
+connect_bd_net [get_bd_pins clk_wiz_OLED/locked] [get_bd_pins OLED_0/rst]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins clk_wiz_OLED/locked] [get_bd_pins OLED_0/rst]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets clk_wiz_0_locked] [get_bd_nets util_vector_logic_OLED_Res] [get_bd_cells util_vector_logic_OLED]'
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 4465.930 ; gain = 12.531
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/synth/DMA_block_design_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/synth/DMA_block_design_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_auto_pc_0/DMA_block_design_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_smartconnect_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_system_ila_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_auto_pc_0, cache-ID = 291821656b379a66; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_smartconnect_0_0, cache-ID = 3d77241ed5449764; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_system_ila_0_0, cache-ID = b3e5c8676dbf2b99; cache size = 270.066 MB.
+config_ip_cache: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4514.215 ; gain = 10.133
+[Fri Apr 15 15:58:33 2022] Launched synth_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1/runme.log
+[Fri Apr 15 15:58:33 2022] Launched impl_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 4514.215 ; gain = 48.285
+set_property PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+Processed interface axi_dma_0_M_AXI_S2MM_ila1_slot0
+Processed interface axi_dma_0_M_AXI_MM2S_ila1_slot1
+Processed interface axis_data_fifo_0_M_AXIS_ila1_slot2
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+create_bd_port -dir I rst
+delete_bd_objs [get_bd_ports rst]
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Common 17-365] Interrupt caught but 'launch_runs' cannot be canceled. Please wait for command to finish.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_OLED clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_VGA clk_wiz propagate
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IP Integrator design C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd
+INFO: [Common 17-681] Processing pending cancel.
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [BD 41-1662] The design 'DMA_block_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/sim/DMA_block_design.v
+VHDL Output written to : c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hdl/DMA_block_design_wrapper.v
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/hw_handoff/DMA_block_design_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_smartconnect_0_0/bd_0/synth/DMA_block_design_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/hw_handoff/DMA_block_design_system_ila_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_system_ila_0_0/bd_0/synth/DMA_block_design_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/ip/DMA_block_design_auto_pc_0/DMA_block_design_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design.hwh
+Generated Block Design Tcl file c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/hw_handoff/DMA_block_design_bd.tcl
+Generated Hardware Definition File c:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/DMA_block_design/synth/DMA_block_design.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_OLED_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_axi_dma_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_axis_data_fifo_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_clk_wiz_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_clk_wiz_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_design_1_wrapper_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_processing_system7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_rst_ps7_0_100M_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_smartconnect_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_system_ila_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP DMA_block_design_util_vector_logic_0_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_OLED_0_0, cache-ID = cf930e97c8264f90; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_system_ila_0_0, cache-ID = b3e5c8676dbf2b99; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_auto_pc_0, cache-ID = 291821656b379a66; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_axi_dma_0_0, cache-ID = 8580f1788bd8d59d; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_axis_data_fifo_0_0, cache-ID = 0e283d9cd643d7cb; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_clk_wiz_0_0, cache-ID = dd5316a5fbc24e1f; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_clk_wiz_2, cache-ID = ea15c2588af51a60; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_design_1_wrapper_0_0, cache-ID = 15a439790b135406; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_processing_system7_0_0, cache-ID = 71e1b384515ba4bd; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_rst_ps7_0_100M_0, cache-ID = 04646a54504c14db; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_util_vector_logic_0_0, cache-ID = 6633f395641171b5; cache size = 270.066 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DMA_block_design_smartconnect_0_0, cache-ID = 3d77241ed5449764; cache size = 270.066 MB.
+config_ip_cache: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4573.289 ; gain = 0.539
+[Fri Apr 15 16:21:42 2022] Launched synth_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/synth_1/runme.log
+[Fri Apr 15 16:21:42 2022] Launched impl_1...
+Run output will be captured here: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 4573.289 ; gain = 0.539
+write_hw_platform -fixed -include_bit -force -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/DMA_block_design_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/DMA_block_design_wrapper.xsa ...
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/DMA_block_design_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 4761.816 ; gain = 188.527
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248469501
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469501
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248469501
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469501
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pdrego/Downloads/Final_Project/IP_REPO'.
+create_bd_cell -type ip -vlnv sfu.ca:user:i2s:1.0 i2s_0
+set_property location {5 1692 675} [get_bd_cells i2s_0]
+set_property location {3 913 162} [get_bd_cells i2s_0]
+create_bd_port -dir I bclk
+create_bd_port -dir I lrclk
+connect_bd_net [get_bd_ports bclk] [get_bd_pins i2s_0/bclk]
+connect_bd_net [get_bd_ports lrclk] [get_bd_pins i2s_0/lrclk]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248469501
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469501
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248469501
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469501
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248469501
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469501
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248469501
+save_bd_design
+Wrote  : <C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\DMA_block_design\DMA_block_design.bd> 
+Wrote  : <C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/ui/bd_3bf83b97.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 15 18:07:20 2022...

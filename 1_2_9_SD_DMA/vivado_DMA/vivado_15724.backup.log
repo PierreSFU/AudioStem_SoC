@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 13 14:59:48 2022
+# Process ID: 15724
+# Current directory: U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25124 U:\Spring2022\ENSC462\Labs\Final_Project\9_DMA\vivado_DMA\vivado_DMA.xpr
+# Log file: U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado.log
+# Journal file: U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.xpr
+INFO: [Project 1-313] Project file moved from 'C:/School/ENSC462_Final_Project/Final_Project/9_DMA/vivado_DMA' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:01:03 . Memory (MB): peak = 1172.270 ; gain = 43.523
+update_compile_order -fileset sources_1
+open_bd_design {U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Successfully read diagram <design_1> from block design file <U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1345.352 ; gain = 140.051
+regenerate_bd_layout
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+open_bd_design {U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.c_mm2s_burst_size {8} CONFIG.c_s2mm_burst_size {8}] [get_bd_cells axi_dma_0]
+endgroup
+save_bd_design
+Wrote  : <U:\Spring2022\ENSC462\Labs\Final_Project\9_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_ILA_CLK_FREQ(100000000) on '/ila_lib' with propagated value(1e+08). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_ILA_CLK_FREQ(100000000) on '/ila_lib' with propagated value(1e+08). Command ignored
+Wrote  : <U:\Spring2022\ENSC462\Labs\Final_Project\9_DMA\vivado_DMA\vivado_DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <U:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : u:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : u:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : u:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vivado_DMA/vivado_DMA.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:26 ; elapsed = 00:00:57 . Memory (MB): peak = 1871.098 ; gain = 301.832
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 13 16:04:33 2022...

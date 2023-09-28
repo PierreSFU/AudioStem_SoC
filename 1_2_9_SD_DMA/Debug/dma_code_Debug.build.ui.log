@@ -1,0 +1,28 @@
+2022-04-15T14:22:51.903439300255-14:22:51 **** Build of configuration Debug for project dma_code ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/platform.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IU:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vitis_DMA/dma_test/export/dma_test/sw/dma_test/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+000-'Finished building: ../src/platform.c'
+000-' '
+000-'Building file: ../src/sdCard.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdCard.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IU:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vitis_DMA/dma_test/export/dma_test/sw/dma_test/standalone_domain/bspinclude/include -MMD -MP -MF"src/sdCard.d" -MT"src/sdCard.o" -o "src/sdCard.o" "../src/sdCard.c"
+000-'Finished building: ../src/sdCard.c'
+000-' '
+000-'Building file: ../src/sdTest.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdTest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IU:/Spring2022/ENSC462/Labs/Final_Project/9_DMA/vitis_DMA/dma_test/export/dma_test/sw/dma_test/standalone_domain/bspinclude/include -MMD -MP -MF"src/sdTest.d" -MT"src/sdTest.o" -o "src/sdTest.o" "../src/sdTest.c"
+000/dma_code/src/sdTest.c8-1-1fatal error: ff.h: No such file or directory2-../src/sdTest.c:8:10: fatal error: ff.h: No such file or directory
+000-    8 | #include "ff.h"
+000-      |          ^~~~~~
+000-compilation terminated.
+000/dma_code0-1-1make[1]: *** [src/subdir.mk:35: src/sdTest.o] Error 12-make[1]: *** [src/subdir.mk:35: src/sdTest.o] Error 1
+000/dma_code0-1-1make: *** [makefile:34: all] Error 22-make: *** [makefile:34: all] Error 2
+00255-
+14:22:58 Build Finished (took 6s.163ms)
+

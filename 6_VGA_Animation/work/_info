@@ -1,0 +1,174 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dU:/Spring2022/ENSC462/Labs/Lab4/part1
+Pres_1080p_package
+Z0 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 536
+w1648004331
+Z3 dU:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation
+8U:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/res_1080p_package.vhd
+FU:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/res_1080p_package.vhd
+l0
+L5 1
+V5lc5b1Rb0hdMY39ZD>`?H0
+!s100 7cNlGaEM]HPS@XPO?j`i>2
+Z4 OV;C;2020.1;71
+33
+!s110 1649727724
+!i10b 1
+!s108 1649727724.000000
+!s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|U:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/res_1080p_package.vhd|
+!s107 U:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/res_1080p_package.vhd|
+!i113 1
+Z5 o-work work -2008 -explicit
+Z6 tExplicit 1 CvgOpt 0
+Ptest_rom_package
+R0
+R1
+R2
+!i122 537
+Z7 w1649727700
+R3
+Z8 8U:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/test_rom_package.vhd
+Z9 FU:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/test_rom_package.vhd
+l0
+L5 1
+Vz6YUZJ_7PlZ0=H>I90eUP0
+!s100 D?X4e8TN]DZd[KcClEch03
+R4
+33
+b1
+Z10 !s110 1649727725
+!i10b 1
+Z11 !s108 1649727725.000000
+Z12 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|U:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/test_rom_package.vhd|
+Z13 !s107 U:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/test_rom_package.vhd|
+!i113 1
+R5
+R6
+Bbody
+Z14 DPx4 work 16 test_rom_package 0 22 z6YUZJ_7PlZ0=H>I90eUP0
+R0
+R1
+R2
+!i122 537
+l0
+L27 1
+Va?SQ9j:kdAXEkk^RMmdQP1
+!s100 e=ROW4>>ZcCOzzLCUX_;>2
+R4
+33
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Evideo_controller
+Z15 w1649727598
+R14
+Z16 DPx4 work 17 res_1080p_package 0 22 5lc5b1Rb0hdMY39ZD>`?H0
+R0
+R1
+R2
+!i122 538
+R3
+Z17 8U:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/video_controller.vhd
+Z18 FU:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/video_controller.vhd
+l0
+L7 1
+VBUKTRH[@?0a;?baF_@gb=2
+!s100 K3:TCGh`B3NWgL@U<ceUJ0
+R4
+33
+Z19 !s110 1649727726
+!i10b 1
+Z20 !s108 1649727726.000000
+Z21 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|U:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/video_controller.vhd|
+Z22 !s107 U:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/video_controller.vhd|
+!i113 1
+R5
+R6
+Artl
+R14
+R16
+R0
+R1
+R2
+Z23 DEx4 work 16 video_controller 0 22 BUKTRH[@?0a;?baF_@gb=2
+!i122 538
+l36
+Z24 L18 144
+Z25 VHlEjmXD^UjUX2bUgEUC3l0
+Z26 !s100 9[0X_2562SYgGZ=f0KcI52
+R4
+33
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R5
+R6
+Evideo_controller_tb
+Z27 w1648262522
+R16
+Z28 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R0
+R1
+R2
+!i122 522
+Z29 dU:/Spring2022/ENSC462/Labs/Lab4/part3
+Z30 8U:/Spring2022/ENSC462/Labs/Lab4/part3/video_controller_tb.vhd
+Z31 FU:/Spring2022/ENSC462/Labs/Lab4/part3/video_controller_tb.vhd
+l0
+L10 1
+V=?lf;]JUYiATZ]@@LT9k_2
+!s100 M;]eBg?i:fVn9GCF8UkFV1
+R4
+33
+Z32 !s110 1648262572
+!i10b 1
+Z33 !s108 1648262571.000000
+Z34 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|U:/Spring2022/ENSC462/Labs/Lab4/part3/video_controller_tb.vhd|
+Z35 !s107 U:/Spring2022/ENSC462/Labs/Lab4/part3/video_controller_tb.vhd|
+!i113 1
+R5
+R6
+Asim
+R14
+R23
+R16
+R28
+R0
+R1
+R2
+DEx4 work 19 video_controller_tb 0 22 =?lf;]JUYiATZ]@@LT9k_2
+!i122 522
+l32
+L13 134
+VZU^YWXHo:l4JfWn@hJg5D1
+!s100 Dm:j:W[BR5jfI5MdF01H63
+R4
+33
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R5
+R6

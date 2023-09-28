@@ -1,0 +1,282 @@
+/*
+ * testsd.c
+ *
+ *  Created on: May 14, 2020
+ *      Author: VIPIN
+ */
+
+#include "ff.h"
+#include "xstatus.h"
+#include <stdlib.h>
+#include "xil_printf.h"
+#include "xil_cache.h"
+
+FATFS  fatfs;
+
+static int SD_Init();
+static int SD_Eject();
+//static int ReadFile(char *FileName, u32 DestinationAddress);
+//static int WriteFile(char *FileName, u32 size, u32 SourceAddress);
+static int BurstReadWrite(char *FileRead, u32 DestinationBuffer, char *FileWrite, u32 size, u32 SourceAddress, u32 file_burst_size);
+
+
+#define burst_size 16384 // MINIMUM 64**
+#define inputImageWidth 512
+#define inputImageHeight 512
+
+char imageBuffer[inputImageWidth*inputImageHeight*3];
+char burstBuffer[burst_size];
+
+struct wav_header_struct {
+   // RIFF              // OFFSET-SIZE
+   char id_Riff[4]; // 0-4
+   uint32_t size_Riff;// 4-4
+   char format_Riff[4]; // 8-4
+
+   // FORMAT
+   char id_Form[4]; // 12-4
+   uint32_t size_Form; // 16-4
+   uint16_t format_Form; // 20-2
+   uint16_t channels_Form; // 22-2
+   uint32_t sample_rate_Form; //24-4
+   uint32_t byte_rate_Form; //28-4
+   uint16_t block_align_Form; // 32-2
+   uint16_t bits_per_sample_Form; // 34-2
+   // DATA
+   char id_Data[4]; // 36-4
+   uint32_t data_size_Data; // 40-4
+//   int data_Data;
+}wave_header;
+
+static void print_data(struct wav_header_struct* wav, unsigned int file_size) {
+	printf("Total file size : %u\n", file_size);
+	printf("File format : %.*s\n", (int)sizeof wav->format_Riff, wav->format_Riff);
+	printf("Channels : %d\n", wav->channels_Form);
+	printf("Sample rate : %lu\n", wav->sample_rate_Form);
+	printf("Bits per sample : %d\n", wav->bits_per_sample_Form);
+	printf("Data bytes **WRONG** : %lu\n", wav->data_size_Data);
+	printf("Total samples **WRONG** : %u\n", (file_size - 44)/(wav->bits_per_sample_Form));
+}
+
+
+int main(){
+	xil_printf("SD Mounted...\n");
+	int Status;
+
+    Status = SD_Init(&fatfs);
+    if (Status != XST_SUCCESS) {
+  	 print("file system init failed\n\r");
+    	 return XST_FAILURE;
+    }
+
+    Status = BurstReadWrite("1.WAV",(u32)burstBuffer, "output.WAV",burst_size,(u32)burstBuffer, burst_size);
+    if (Status != XST_SUCCESS) {
+  	 print("file read failed\n\r");
+    	 return XST_FAILURE;
+    }
+
+    Status=SD_Eject(&fatfs);
+    if (Status != XST_SUCCESS) {
+  	 print("SD card unmount failed\n\r");
+    	 return XST_FAILURE;
+    }
+	xil_printf("SD Unmounted...\n");
+    return 0;
+}
+
+static int BurstReadWrite(char *FileRead, u32 DestinationBuffer, char *FileWrite, u32 size, u32 SourceAddress, u32 file_burst_size)
+{
+	// Reading Variables
+	FIL fil;
+	FILINFO fno;
+	FRESULT rc, fs;
+	UINT br; // How much data has been written so far, from f_read
+	u32 file_size;
+
+	// Writing variables
+	UINT btw;
+	static FIL filw; // File instance
+	FRESULT rcw; // FRESULT variable
+
+
+	// Open reading & writing files
+	rc = f_open(&fil, FileRead, FA_READ);
+	rcw = f_open(&filw, (char *)FileWrite, FA_OPEN_ALWAYS | FA_WRITE); //f_open // Writing
+
+	// Check if any errors occured when opening
+		if (rc) { // reading
+			xil_printf(" ERROR : f_open returned %d\r\n", rc);
+			return XST_FAILURE;
+		}
+		if (rcw) { // writing
+			xil_printf(" ERROR : f_open returned %d\r\n", rcw);
+			return XST_FAILURE;
+		}
+
+	// Check file status, allows us to get filesize?
+	fs = f_stat(FileRead, &fno); // reading
+		if (fs) {
+			xil_printf(" ERROR : f_stat returned %d\r\n", fs);
+			return XST_FAILURE;
+		}
+
+	// Set file pointer to current file?
+	file_size = fno.fsize; // CHANGED FROM FIL TO FNO
+	rc = f_lseek(&fil, 0);
+		if (rc) {
+			xil_printf(" ERROR : f_lseek returned %d\r\n", rc);
+			return XST_FAILURE;
+		}
+
+
+	// Determine how many burst_size writes we will need to perform
+	int last_bits_to_copy = file_size % file_burst_size;
+	int total_full_size_writes = (file_size-last_bits_to_copy)/file_burst_size;
+
+	int headers_not_copied = 1;
+	// read burst_size bits then write burst_size bits
+	for(int i = 0; i < 4; i++) { // EDIT THIS BACK TO NORMAL!!!!!!!!!!!!!!!!!!!!
+
+		rc = f_read(&fil, (void*) DestinationBuffer, file_burst_size, &br);
+			if (rc) {
+				xil_printf(" ERROR : f_read returned %d\r\n", rc);
+				return XST_FAILURE;
+			}
+
+		// Read header file, ASSUMES file_burst_size is AT LEAST 44
+		if(headers_not_copied) {
+			// Copy data to buffer
+			char* bufferFile = burstBuffer;
+			memcpy(&wave_header, bufferFile, 44);
+
+			print_data(&wave_header, file_size);
+			headers_not_copied = 0; // do not come back into this loop
+		}
+
+		rcw = f_write(&filw,(const void*)SourceAddress,br,&btw);
+			if (rcw) {
+				xil_printf(" ERROR : f_write returned %d\r\n", rcw);
+				return XST_FAILURE;
+			}
+	}
+	// Copy over last bits if they exist
+	if(last_bits_to_copy != 0){
+		rc = f_read(&fil, (void*) DestinationBuffer, last_bits_to_copy, &br);
+		if (rc) {
+			xil_printf(" ERROR : f_read returned %d\r\n", rc);
+			return XST_FAILURE;
+		}
+
+		rcw = f_write(&filw,(const void*)SourceAddress,size,&btw);
+		if (rcw) {
+			xil_printf(" ERROR : f_write returned %d\r\n", rcw);
+			return XST_FAILURE;
+		}
+	}
+
+
+	// Close reading and writing files
+	rcw = f_close(&filw);
+	if (rcw) {
+		xil_printf(" ERROR : f_write returned %d\r\n", rcw);
+		return XST_FAILURE;
+	}
+	rc = f_close(&fil);
+	if (rc) {
+		xil_printf(" ERROR : f_close returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+	Xil_DCacheFlush();
+
+	return XST_SUCCESS;
+}
+
+
+
+static int SD_Init()
+{
+	FRESULT rc;
+	TCHAR *Path = "0:/";
+	rc = f_mount(&fatfs,Path,0);
+	if (rc) {
+		xil_printf(" ERROR : f_mount returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+	return XST_SUCCESS;
+}
+
+static int SD_Eject()
+{
+	FRESULT rc;
+	TCHAR *Path = "0:/";
+	rc = f_unmount(Path);
+	if (rc) {
+		xil_printf(" ERROR : f_UNmount returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+	return XST_SUCCESS;
+}
+
+
+/*
+static int ReadFile(char *FileName, u32 DestinationAddress)
+{
+	FIL fil;
+	FILINFO fno;
+	FRESULT rc, fs;
+	UINT br; // How much data has been written so far, from f_read
+	u32 file_size;
+	rc = f_open(&fil, FileName, FA_READ);
+	if (rc) {
+		xil_printf(" ERROR : f_open returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+
+	fs = f_stat(FileName, &fno);
+	if (fs) {
+		xil_printf(" ERROR : f_stat returned %d\r\n", fs);
+		return XST_FAILURE;
+	}
+
+	file_size = fno.fsize; // CHANGED FROM FIL TO FNO
+	rc = f_lseek(&fil, 0);
+	if (rc) {
+		xil_printf(" ERROR : f_lseek returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+	rc = f_read(&fil, (void*) DestinationAddress, file_size, &br); //
+	if (rc) {
+		xil_printf(" ERROR : f_read returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+	rc = f_close(&fil);
+	if (rc) {
+		xil_printf(" ERROR : f_close returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+	Xil_DCacheFlush();
+	return XST_SUCCESS;
+}
+
+static int WriteFile(char *FileName, u32 size, u32 SourceAddress){ // size is how much data we are writing to file
+	UINT btw;
+	static FIL fil; // File instance
+	FRESULT rc; // FRESULT variable
+	rc = f_open(&fil, (char *)FileName, FA_OPEN_ALWAYS | FA_WRITE); //f_open
+	if (rc) {
+		xil_printf(" ERROR : f_open returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+	rc = f_write(&fil,(const void*)SourceAddress,size,&btw);
+	if (rc) {
+		xil_printf(" ERROR : f_write returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+	rc = f_close(&fil);
+	if (rc) {
+		xil_printf(" ERROR : f_write returned %d\r\n", rc);
+		return XST_FAILURE;
+	}
+	return XST_SUCCESS;
+}
+*/

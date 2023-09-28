@@ -1,0 +1,11 @@
+/* C:/Users/pdrego/AppData/Local/Temp/bootgen_boot_me_pls_system11344424118668543294/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/*DMA_block_design_wrapper*/
+the_ROM_image:
+{
+ [bootloader] C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/sw/DMA_block_design_wrapper/boot/fsbl.elf
+ C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit
+}

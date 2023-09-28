@@ -1,0 +1,21 @@
+# Compile of res_1080p_package.vhd was successful.
+# Compile of test_rom_package.vhd was successful.
+# Compile of video_controller.vhd failed with 14 errors.
+# 3 compiles, 1 failed with 14 errors.
+# Compile of res_1080p_package.vhd was successful.
+# Compile of test_rom_package.vhd was successful.
+# Compile of video_controller.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of res_1080p_package.vhd was successful.
+# Compile of test_rom_package.vhd was successful.
+# Compile of video_controller.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of res_1080p_package.vhd was successful.
+# Compile of test_rom_package.vhd failed with 48 errors.
+# Compile of video_controller.vhd was successful.
+# 3 compiles, 1 failed with 48 errors.
+# Compile of test_rom_package.vhd was successful.
+# Compile of res_1080p_package.vhd was successful.
+# Compile of test_rom_package.vhd was successful.
+# Compile of video_controller.vhd was successful.
+# 3 compiles, 0 failed with no errors.

@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 15 17:20:05 2022
+# Process ID: 29616
+# Current directory: C:/Users/pdrego/Downloads/Final_Project/10_OLED/vivado_oled
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2212 C:\Users\pdrego\Downloads\Final_Project\10_OLED\vivado_oled\vivado_oled.xpr
+# Log file: C:/Users/pdrego/Downloads/Final_Project/10_OLED/vivado_oled/vivado.log
+# Journal file: C:/Users/pdrego/Downloads/Final_Project/10_OLED/vivado_oled\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pdrego/Downloads/Final_Project/10_OLED/vivado_oled/vivado_oled.xpr
+INFO: [Project 1-313] Project file moved from 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled' since last save.
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/Users/pdrego/AppData/Roaming/Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store', nor could it be found using path 'C:/School/AppData/Roaming/Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/pdrego/Downloads/Final_Project/10_OLED/oled_core', nor could it be found using path 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_core'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/pdrego/Downloads/Final_Project/10_OLED/oled_IP/OLED_DISPLAY_1.0', nor could it be found using path 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_IP/OLED_DISPLAY_1.0'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/pdrego/Downloads/Final_Project/10_OLED/oled_controller_zedboard/oled_controller_zedboard_1.0', nor could it be found using path 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_zedboard/oled_controller_zedboard_1.0'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/pdrego/Downloads/Final_Project/10_OLED/oled_controller/oled_controller_1.0', nor could it be found using path 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller/oled_controller_1.0'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/pdrego/Downloads/Final_Project/10_OLED/oled_controller_1.0', nor could it be found using path 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_1.0'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/pdrego/Downloads/Final_Project/IP_REPO/OLED'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/pdrego/Downloads/Final_Project/10_OLED/oled_core'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/pdrego/Downloads/Final_Project/10_OLED/oled_IP/OLED_DISPLAY_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/pdrego/Downloads/Final_Project/10_OLED/oled_controller_zedboard/oled_controller_zedboard_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/pdrego/Downloads/Final_Project/10_OLED/oled_controller/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/pdrego/Downloads/Final_Project/10_OLED/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1128.812 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 15 18:07:26 2022...

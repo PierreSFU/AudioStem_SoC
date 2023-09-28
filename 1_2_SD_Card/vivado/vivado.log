@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr  7 17:44:06 2022
+# Process ID: 8724
+# Current directory: U:/Spring2022/ENSC462/Labs/Final_Project/1_2_SD_Card/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32 U:\Spring2022\ENSC462\Labs\Final_Project\1_2_SD_Card\vivado\vivado.xpr
+# Log file: U:/Spring2022/ENSC462/Labs/Final_Project/1_2_SD_Card/vivado/vivado.log
+# Journal file: U:/Spring2022/ENSC462/Labs/Final_Project/1_2_SD_Card/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/Spring2022/ENSC462/Labs/Final_Project/1_2_SD_Card/vivado/vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1128.473 ; gain = 0.000
+open_hw_manager
+update_compile_order -fileset sources_1
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.

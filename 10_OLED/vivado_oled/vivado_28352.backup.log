@@ -1,0 +1,314 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 15 10:07:35 2022
+# Process ID: 28352
+# Current directory: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3792 C:\School\ENSC462_Final_Project\Final_Project\10_OLED\vivado_oled\vivado_oled.xpr
+# Log file: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado.log
+# Journal file: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.xpr
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/School/AppData/Roaming/Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_core'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_IP/OLED_DISPLAY_1.0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_zedboard/oled_controller_zedboard_1.0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller/oled_controller_1.0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_1.0'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_core'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_IP/OLED_DISPLAY_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_zedboard/oled_controller_zedboard_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/School/Xilinix_Vitis/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1120.020 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd}
+ERROR: [BD 41-1296] Cannot read block design file <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd>, check for the correct location of the file.
+ERROR: [Common 17-39] 'open_bd_design' failed due to earlier errors.
+open_bd_design {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd}
+Reading block design file <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:module_ref:top:1.0 - top_0
+Successfully read diagram <oled_block_design_1> from block design file <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd>
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469501
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2710.613 ; gain = 1541.621
+set_property PROGRAM.FILE {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd}
+ipx::package_project -root_dir C:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design/hdl/oled_block_design_wrapper.v'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'oled_spi_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-5661] Bus Interface 'oled_spi_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'oled_spi_clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::unload_core c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/School/Xilinix_Vitis/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_core'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_IP/OLED_DISPLAY_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_zedboard/oled_controller_zedboard_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+current_project vivado_oled
+export_ip_user_files -of_objects  [get_files C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd] -no_script -reset -force -quiet
+remove_files  C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design/oled_block_design.bd
+make_wrapper -files [get_files C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd] -top
+INFO: [BD 41-1662] The design 'oled_block_design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\School\ENSC462_Final_Project\Final_Project\10_OLED\vivado_oled\vivado_oled.srcs\sources_1\bd\oled_block_design_1\oled_block_design_1.bd> 
+Wrote  : <C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/ui/bd_cacc8aa5.ui> 
+VHDL Output written to : c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design_1/synth/oled_block_design_1.v
+VHDL Output written to : c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design_1/sim/oled_block_design_1.v
+VHDL Output written to : c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design_1/hdl/oled_block_design_1_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3013.824 ; gain = 122.566
+add_files -norecurse c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design_1/hdl/oled_block_design_1_wrapper.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Apr 15 10:23:46 2022] Launched synth_1...
+Run output will be captured here: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/synth_1/runme.log
+[Fri Apr 15 10:23:46 2022] Launched impl_1...
+Run output will be captured here: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/runme.log
+current_project tmp_edit_project
+current_project vivado_oled
+current_project tmp_edit_project
+current_project vivado_oled
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Apr 15 10:25:57 2022] Launched synth_1...
+Run output will be captured here: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/synth_1/runme.log
+[Fri Apr 15 10:25:57 2022] Launched impl_1...
+Run output will be captured here: C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd}
+current_project tmp_edit_project
+ipx::add_bus_interface ye [ipx::current_core]
+set_property abstraction_type_vlnv xilinx.com:interface:aximm_rtl:1.0 [ipx::get_bus_interfaces ye -of_objects [ipx::current_core]]
+set_property bus_type_vlnv xilinx.com:interface:aximm:1.0 [ipx::get_bus_interfaces ye -of_objects [ipx::current_core]]
+set_property interface_mode master [ipx::get_bus_interfaces ye -of_objects [ipx::current_core]]
+ipx::add_bus_parameter NUM_READ_OUTSTANDING [ipx::get_bus_interfaces ye -of_objects [ipx::current_core]]
+ipx::add_bus_parameter NUM_WRITE_OUTSTANDING [ipx::get_bus_interfaces ye -of_objects [ipx::current_core]]
+ipx::remove_bus_interface ye [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-5661] Bus Interface 'oled_spi_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'oled_spi_clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+set_property previous_version_for_upgrade xilinx.com:user:top:1.0 [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-5661] Bus Interface 'oled_spi_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'oled_spi_clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-5661] Bus Interface 'oled_spi_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'oled_spi_clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_core c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_IP/OLED_DISPLAY_1.0 c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_zedboard/oled_controller_zedboard_1.0 c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller/oled_controller_1.0 c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_core'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_IP/OLED_DISPLAY_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_zedboard/oled_controller_zedboard_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+ipx::package_project -root_dir C:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design/hdl/oled_block_design_wrapper.v'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.srcs/sources_1/bd/oled_block_design_1/oled_block_design_1.bd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.gen/sources_1/bd/oled_block_design_1/hdl/oled_block_design_1_wrapper.v'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'oled_spi_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-5661] Bus Interface 'oled_spi_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'oled_spi_clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::unload_core c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/School/Xilinix_Vitis/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_core'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_IP/OLED_DISPLAY_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_zedboard/oled_controller_zedboard_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/10_OLED/oled_controller_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+ipx::add_bus_parameter ASSOCIATED_CLKEN [ipx::get_bus_interfaces oled_spi_clk -of_objects [ipx::current_core]]
+ipx::add_bus_parameter ASSOCIATED_ASYNC_RESET [ipx::get_bus_interfaces oled_spi_clk -of_objects [ipx::current_core]]
+ipx::add_bus_parameter ASSOCIATED_MMCM_LOCK [ipx::get_bus_interfaces oled_spi_clk -of_objects [ipx::current_core]]
+ipx::remove_bus_parameter ASSOCIATED_CLKEN [ipx::get_bus_interfaces oled_spi_clk -of_objects [ipx::current_core]]
+ipx::remove_bus_parameter ASSOCIATED_ASYNC_RESET [ipx::get_bus_interfaces oled_spi_clk -of_objects [ipx::current_core]]
+ipx::remove_bus_parameter ASSOCIATED_MMCM_LOCK [ipx::get_bus_interfaces oled_spi_clk -of_objects [ipx::current_core]]
+ipx::add_bus_parameter FREQ_HZ [ipx::get_bus_interfaces oled_spi_clk -of_objects [ipx::current_core]]
+ipx::remove_bus_parameter FREQ_HZ [ipx::get_bus_interfaces oled_spi_clk -of_objects [ipx::current_core]]
+ipx::add_bus_parameter FREQ_HZ [ipx::get_bus_interfaces oled_spi_clk -of_objects [ipx::current_core]]
+ipx::add_bus_parameter FREQ_HZ [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]
+ipx::remove_bus_parameter FREQ_HZ [ipx::get_bus_interfaces oled_spi_clk -of_objects [ipx::current_core]]
+ipx::remove_bus_parameter FREQ_HZ [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]
+set_property previous_version_for_upgrade xilinx.com:user:top:1.0 [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-5661] Bus Interface 'oled_spi_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'oled_spi_clk': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/OLED'
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/School/ENSC462_Final_Project/Final_Project/10_OLED/vivado_oled/vivado_oled.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_project
+open_project C:/School/ENSC462_Final_Project/Final_Project/6_VGA_Animation/vivado/Lab4_1.xpr
+INFO: [Project 1-313] Project file moved from 'U:/Spring2022/ENSC462/Labs/Final_Project/6_VGA_Animation/vivado' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/School/Xilinix_Vitis/Vivado/2020.2/data/ip'.
+open_bd_design {C:/School/ENSC462_Final_Project/Final_Project/6_VGA_Animation/vivado/Lab4_1.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/School/ENSC462_Final_Project/Final_Project/6_VGA_Animation/vivado/Lab4_1.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:module_ref:video_controller:1.0 - video_controller_0
+Successfully read diagram <design_1> from block design file <C:/School/ENSC462_Final_Project/Final_Project/6_VGA_Animation/vivado/Lab4_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 3277.156 ; gain = 23.645
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir C:/School/ENSC462_Final_Project/Final_Project/IP_REPO/VGA -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-4963] design_1_clk_wiz_0_0 has board value specified. The packaged IP will be restricted to usage with board 'em.avnet.com:zed:part0:1.4'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'sys_clock': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'sys_clock' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::unload_core c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/VGA/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/School/ENSC462_Final_Project/Final_Project/IP_REPO/VGA c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/VGA/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/School/Xilinix_Vitis/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3465.656 ; gain = 185.887
+update_compile_order -fileset sources_1
+set_property previous_version_for_upgrade xilinx.com:user:design_1_wrapper:1.0 [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-5661] Bus Interface 'sys_clock' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/VGA [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/School/ENSC462_Final_Project/Final_Project/IP_REPO/VGA'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 15 11:08:24 2022...

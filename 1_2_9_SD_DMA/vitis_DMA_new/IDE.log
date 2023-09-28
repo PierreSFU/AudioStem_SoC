@@ -1,0 +1,643 @@
+14:52:14 INFO  : Registering command handlers for Vitis TCF services
+14:52:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\temp_xsdb_launch_script.tcl
+14:52:18 INFO  : Platform repository initialization has completed.
+14:52:19 INFO  : XSCT server has started successfully.
+14:52:20 INFO  : Successfully done setting XSCT server connection channel  
+14:52:20 INFO  : plnx-install-location is set to ''
+14:52:20 INFO  : Successfully done query RDI_DATADIR 
+14:52:20 INFO  : Successfully done setting workspace for the tool. 
+16:03:51 INFO  : Result from executing command 'getProjects': final_project
+16:03:51 INFO  : Result from executing command 'getPlatforms': 
+16:15:49 ERROR : (XSDB Server)rm: cannot lstat `*.o': Invalid argument
+
+16:15:49 ERROR : (XSDB Server)make: *** [Makefile:42: clean] Error 1
+
+16:17:19 INFO  : No changes in MSS file content so sources will not be generated.
+16:19:13 INFO  : Result from executing command 'getProjects': final_project
+16:19:13 INFO  : Result from executing command 'getPlatforms': final_project|C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project/export/final_project/final_project.xpfm
+16:29:12 INFO  : Result from executing command 'getProjects': DMA_block_design_wrapper
+16:29:12 INFO  : Result from executing command 'getPlatforms': 
+16:29:12 ERROR : Unexpected exception occurred while writing platform project 'final_project' log.
+16:29:13 INFO  : Platform 'DMA_block_design_wrapper' is added to custom repositories.
+16:29:24 INFO  : Platform 'DMA_block_design_wrapper' is added to custom repositories.
+16:30:00 ERROR : (XSDB Server)rm: cannot lstat `*.o': Invalid argument
+
+16:30:00 ERROR : (XSDB Server)make: *** [Makefile:42: clean] Error 1
+
+16:31:41 INFO  : No changes in MSS file content so sources will not be generated.
+16:33:41 INFO  : Result from executing command 'getProjects': DMA_block_design_wrapper
+16:33:41 INFO  : Result from executing command 'getPlatforms': DMA_block_design_wrapper|C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/DMA_block_design_wrapper.xpfm
+16:33:42 INFO  : Checking for BSP changes to sync application flags for project 'final_project_hardware'...
+16:33:42 INFO  : Updating application flags with new BSP settings...
+16:33:42 INFO  : Successfully updated application flags for project final_project_hardware.
+16:36:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:25 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+16:36:26 INFO  : 'jtag frequency' command is executed.
+16:36:26 INFO  : Context for 'APU' is selected.
+16:36:26 INFO  : System reset is completed.
+16:36:29 INFO  : 'after 3000' command is executed.
+16:36:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+16:36:31 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit"
+16:36:31 INFO  : Context for 'APU' is selected.
+16:36:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+16:36:31 INFO  : 'configparams force-mem-access 1' command is executed.
+16:36:31 INFO  : Context for 'APU' is selected.
+16:36:31 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl' is done.
+16:36:32 INFO  : 'ps7_init' command is executed.
+16:36:32 INFO  : 'ps7_post_config' command is executed.
+16:36:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:32 INFO  : The application 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:36:32 INFO  : 'configparams force-mem-access 0' command is executed.
+16:36:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:36:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:32 INFO  : 'con' command is executed.
+16:36:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:36:32 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\final_project_hardware_system\_ide\scripts\systemdebugger_final_project_hardware_system_standalone.tcl'
+16:36:39 INFO  : Disconnected from the channel tcfchan#5.
+16:36:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:41 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+16:36:41 INFO  : 'jtag frequency' command is executed.
+16:36:41 INFO  : Context for 'APU' is selected.
+16:36:41 INFO  : System reset is completed.
+16:36:44 INFO  : 'after 3000' command is executed.
+16:36:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+16:36:47 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit"
+16:36:47 INFO  : Context for 'APU' is selected.
+16:36:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+16:36:47 INFO  : 'configparams force-mem-access 1' command is executed.
+16:36:47 INFO  : Context for 'APU' is selected.
+16:36:47 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl' is done.
+16:36:47 INFO  : 'ps7_init' command is executed.
+16:36:47 INFO  : 'ps7_post_config' command is executed.
+16:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:47 INFO  : The application 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:36:47 INFO  : 'configparams force-mem-access 0' command is executed.
+16:36:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:47 INFO  : 'con' command is executed.
+16:36:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:36:47 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\final_project_hardware_system\_ide\scripts\systemdebugger_final_project_hardware_system_standalone.tcl'
+16:36:53 INFO  : Disconnected from the channel tcfchan#6.
+16:36:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:55 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+16:36:55 INFO  : 'jtag frequency' command is executed.
+16:36:55 INFO  : Context for 'APU' is selected.
+16:36:55 INFO  : System reset is completed.
+16:36:58 INFO  : 'after 3000' command is executed.
+16:36:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+16:37:01 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit"
+16:37:01 INFO  : Context for 'APU' is selected.
+16:37:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+16:37:01 INFO  : 'configparams force-mem-access 1' command is executed.
+16:37:01 INFO  : Context for 'APU' is selected.
+16:37:01 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl' is done.
+16:37:01 INFO  : 'ps7_init' command is executed.
+16:37:01 INFO  : 'ps7_post_config' command is executed.
+16:37:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:01 INFO  : The application 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:37:01 INFO  : 'configparams force-mem-access 0' command is executed.
+16:37:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:37:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:02 INFO  : 'con' command is executed.
+16:37:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:37:02 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\final_project_hardware_system\_ide\scripts\systemdebugger_final_project_hardware_system_standalone.tcl'
+16:37:12 INFO  : Disconnected from the channel tcfchan#7.
+16:37:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:37:13 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+16:37:13 INFO  : 'jtag frequency' command is executed.
+16:37:14 INFO  : Context for 'APU' is selected.
+16:37:14 INFO  : System reset is completed.
+16:37:17 INFO  : 'after 3000' command is executed.
+16:37:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+16:37:19 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit"
+16:37:19 INFO  : Context for 'APU' is selected.
+16:37:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+16:37:19 INFO  : 'configparams force-mem-access 1' command is executed.
+16:37:19 INFO  : Context for 'APU' is selected.
+16:37:19 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl' is done.
+16:37:20 INFO  : 'ps7_init' command is executed.
+16:37:20 INFO  : 'ps7_post_config' command is executed.
+16:37:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:20 INFO  : The application 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:37:20 INFO  : 'configparams force-mem-access 0' command is executed.
+16:37:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:37:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:20 INFO  : 'con' command is executed.
+16:37:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:37:20 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\final_project_hardware_system\_ide\scripts\systemdebugger_final_project_hardware_system_standalone.tcl'
+16:37:28 INFO  : Disconnected from the channel tcfchan#8.
+16:37:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:37:28 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+16:37:28 INFO  : 'jtag frequency' command is executed.
+16:37:28 INFO  : Context for 'APU' is selected.
+16:37:29 INFO  : System reset is completed.
+16:37:32 INFO  : 'after 3000' command is executed.
+16:37:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+16:37:34 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit"
+16:37:34 INFO  : Context for 'APU' is selected.
+16:37:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+16:37:34 INFO  : 'configparams force-mem-access 1' command is executed.
+16:37:34 INFO  : Context for 'APU' is selected.
+16:37:34 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl' is done.
+16:37:35 INFO  : 'ps7_init' command is executed.
+16:37:35 INFO  : 'ps7_post_config' command is executed.
+16:37:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:35 INFO  : The application 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:37:35 INFO  : 'configparams force-mem-access 0' command is executed.
+16:37:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:37:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:35 INFO  : 'con' command is executed.
+16:37:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:37:35 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\final_project_hardware_system\_ide\scripts\systemdebugger_final_project_hardware_system_standalone.tcl'
+16:39:09 INFO  : Disconnected from the channel tcfchan#9.
+16:39:16 INFO  : Checking for BSP changes to sync application flags for project 'final_project_hardware'...
+16:39:47 INFO  : Checking for BSP changes to sync application flags for project 'final_project_hardware'...
+16:40:36 INFO  : Checking for BSP changes to sync application flags for project 'final_project_hardware'...
+16:45:46 INFO  : Checking for BSP changes to sync application flags for project 'final_project_hardware'...
+16:46:12 INFO  : Checking for BSP changes to sync application flags for project 'final_project_hardware'...
+16:48:25 INFO  : Result from executing command 'getProjects': DMA_block_design_wrapper
+16:48:25 INFO  : Result from executing command 'getPlatforms': DMA_block_design_wrapper|C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/DMA_block_design_wrapper.xpfm
+16:48:25 INFO  : Checking for BSP changes to sync application flags for project 'final_project_hardware'...
+16:49:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:09 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+16:49:09 INFO  : 'jtag frequency' command is executed.
+16:49:09 INFO  : Context for 'APU' is selected.
+16:49:09 INFO  : System reset is completed.
+16:49:12 INFO  : 'after 3000' command is executed.
+16:49:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+16:49:14 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit"
+16:49:14 INFO  : Context for 'APU' is selected.
+16:49:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+16:49:14 INFO  : 'configparams force-mem-access 1' command is executed.
+16:49:14 INFO  : Context for 'APU' is selected.
+16:49:14 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl' is done.
+16:49:15 INFO  : 'ps7_init' command is executed.
+16:49:15 INFO  : 'ps7_post_config' command is executed.
+16:49:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:15 INFO  : The application 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:49:15 INFO  : 'configparams force-mem-access 0' command is executed.
+16:49:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:49:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:15 INFO  : 'con' command is executed.
+16:49:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:49:15 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\final_project_hardware_system\_ide\scripts\systemdebugger_final_project_hardware_system_standalone.tcl'
+16:49:31 INFO  : Disconnected from the channel tcfchan#14.
+16:49:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:31 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+16:49:31 INFO  : 'jtag frequency' command is executed.
+16:49:31 INFO  : Context for 'APU' is selected.
+16:49:32 INFO  : System reset is completed.
+16:49:35 INFO  : 'after 3000' command is executed.
+16:49:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+16:49:37 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit"
+16:49:37 INFO  : Context for 'APU' is selected.
+16:49:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+16:49:37 INFO  : 'configparams force-mem-access 1' command is executed.
+16:49:37 INFO  : Context for 'APU' is selected.
+16:49:37 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl' is done.
+16:49:37 INFO  : 'ps7_init' command is executed.
+16:49:38 INFO  : 'ps7_post_config' command is executed.
+16:49:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:38 INFO  : The application 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:49:38 INFO  : 'configparams force-mem-access 0' command is executed.
+16:49:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:49:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:38 INFO  : 'con' command is executed.
+16:49:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:49:38 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\final_project_hardware_system\_ide\scripts\systemdebugger_final_project_hardware_system_standalone.tcl'
+16:49:56 INFO  : Disconnected from the channel tcfchan#15.
+16:49:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:57 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+16:49:57 INFO  : 'jtag frequency' command is executed.
+16:49:57 INFO  : Context for 'APU' is selected.
+16:49:58 INFO  : System reset is completed.
+16:50:01 INFO  : 'after 3000' command is executed.
+16:50:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+16:50:03 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit"
+16:50:03 INFO  : Context for 'APU' is selected.
+16:50:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+16:50:03 INFO  : 'configparams force-mem-access 1' command is executed.
+16:50:03 INFO  : Context for 'APU' is selected.
+16:50:03 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl' is done.
+16:50:03 INFO  : 'ps7_init' command is executed.
+16:50:03 INFO  : 'ps7_post_config' command is executed.
+16:50:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:04 INFO  : The application 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:50:04 INFO  : 'configparams force-mem-access 0' command is executed.
+16:50:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:50:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:04 INFO  : 'con' command is executed.
+16:50:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:50:04 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\final_project_hardware_system\_ide\scripts\systemdebugger_final_project_hardware_system_standalone.tcl'
+16:52:19 INFO  : Generated template bif file for boot_me_pls_system
+16:59:04 INFO  : Invoking Bootgen: bootgen -image boot_me_pls_system.bif -arch zynq -o C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_output/BOOT.bin
+16:59:04 INFO  : Creating new bif file C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\boot_output\boot_me_pls_system.bif
+16:59:07 INFO  : Bootgen command execution is done.
+17:01:11 INFO  : Disconnected from the channel tcfchan#16.
+17:01:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:01:15 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+17:01:15 INFO  : 'jtag frequency' command is executed.
+17:01:15 INFO  : Context for 'APU' is selected.
+17:01:15 INFO  : System reset is completed.
+17:01:18 INFO  : 'after 3000' command is executed.
+17:01:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+17:01:21 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit"
+17:01:21 INFO  : Context for 'APU' is selected.
+17:01:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+17:01:21 INFO  : 'configparams force-mem-access 1' command is executed.
+17:01:21 INFO  : Context for 'APU' is selected.
+17:01:21 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl' is done.
+17:01:21 INFO  : 'ps7_init' command is executed.
+17:01:21 INFO  : 'ps7_post_config' command is executed.
+17:01:21 INFO  : 'configparams force-mem-access 0' command is executed.
+17:01:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:01:21 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\boot_me_pls_system\_ide\scripts\systemdebugger_boot_me_pls_system_standalone.tcl'
+17:21:27 INFO  : Disconnected from the channel tcfchan#17.
+17:21:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:21:46 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+17:21:46 INFO  : 'jtag frequency' command is executed.
+17:21:46 INFO  : Context for 'APU' is selected.
+17:21:47 INFO  : System reset is completed.
+17:21:50 INFO  : 'after 3000' command is executed.
+17:21:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+17:21:52 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit"
+17:21:52 INFO  : Context for 'APU' is selected.
+17:21:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+17:21:52 INFO  : 'configparams force-mem-access 1' command is executed.
+17:21:52 INFO  : Context for 'APU' is selected.
+17:21:52 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl' is done.
+17:21:52 INFO  : 'ps7_init' command is executed.
+17:21:53 INFO  : 'ps7_post_config' command is executed.
+17:21:53 INFO  : 'configparams force-mem-access 0' command is executed.
+17:21:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:21:53 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\boot_me_pls_system\_ide\scripts\systemdebugger_boot_me_pls_system_standalone.tcl'
+17:22:19 INFO  : Disconnected from the channel tcfchan#18.
+17:22:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:26 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+17:22:26 INFO  : 'jtag frequency' command is executed.
+17:22:26 INFO  : Context for 'APU' is selected.
+17:22:26 INFO  : System reset is completed.
+17:22:29 INFO  : 'after 3000' command is executed.
+17:22:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+17:22:31 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit"
+17:22:31 INFO  : Context for 'APU' is selected.
+17:22:32 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+17:22:32 INFO  : 'configparams force-mem-access 1' command is executed.
+17:22:32 INFO  : Context for 'APU' is selected.
+17:22:32 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl' is done.
+17:22:32 INFO  : 'ps7_init' command is executed.
+17:22:32 INFO  : 'ps7_post_config' command is executed.
+17:22:32 INFO  : 'configparams force-mem-access 0' command is executed.
+17:22:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:22:32 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\boot_me_pls_system\_ide\scripts\systemdebugger_boot_me_pls_system_standalone.tcl'
+17:32:46 INFO  : Disconnected from the channel tcfchan#19.
+17:32:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:47 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+17:32:47 INFO  : 'jtag frequency' command is executed.
+17:32:47 INFO  : Context for 'APU' is selected.
+17:32:47 INFO  : System reset is completed.
+17:32:50 INFO  : 'after 3000' command is executed.
+17:32:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+17:32:53 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit"
+17:32:53 INFO  : Context for 'APU' is selected.
+17:32:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+17:32:53 INFO  : 'configparams force-mem-access 1' command is executed.
+17:32:53 INFO  : Context for 'APU' is selected.
+17:32:53 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl' is done.
+17:32:53 INFO  : 'ps7_init' command is executed.
+17:32:53 INFO  : 'ps7_post_config' command is executed.
+17:32:53 INFO  : 'configparams force-mem-access 0' command is executed.
+17:32:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/boot_me_pls/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:32:53 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\boot_me_pls_system\_ide\scripts\systemdebugger_boot_me_pls_system_standalone.tcl'
+17:33:18 INFO  : Disconnected from the channel tcfchan#20.
+17:33:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:19 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+17:33:19 INFO  : 'jtag frequency' command is executed.
+17:33:20 INFO  : Context for 'APU' is selected.
+17:33:20 INFO  : System reset is completed.
+17:33:23 INFO  : 'after 3000' command is executed.
+17:33:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+17:33:25 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit"
+17:33:25 INFO  : Context for 'APU' is selected.
+17:33:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+17:33:25 INFO  : 'configparams force-mem-access 1' command is executed.
+17:33:25 INFO  : Context for 'APU' is selected.
+17:33:25 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl' is done.
+17:33:26 INFO  : 'ps7_init' command is executed.
+17:33:26 INFO  : 'ps7_post_config' command is executed.
+17:33:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:33:26 INFO  : The application 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:33:27 INFO  : 'configparams force-mem-access 0' command is executed.
+17:33:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:33:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:33:27 INFO  : 'con' command is executed.
+17:33:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:33:27 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\final_project_hardware_system\_ide\scripts\systemdebugger_final_project_hardware_system_standalone.tcl'
+17:33:48 INFO  : Disconnected from the channel tcfchan#21.
+17:34:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:34:02 INFO  : Jtag cable 'Digilent Zed 210248469501' is selected.
+17:34:02 INFO  : 'jtag frequency' command is executed.
+17:34:02 INFO  : Context for 'APU' is selected.
+17:34:02 INFO  : System reset is completed.
+17:34:05 INFO  : 'after 3000' command is executed.
+17:34:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}' command is executed.
+17:34:08 INFO  : Device configured successfully with "C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit"
+17:34:08 INFO  : Context for 'APU' is selected.
+17:34:08 INFO  : Hardware design and registers information is loaded from 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa'.
+17:34:08 INFO  : 'configparams force-mem-access 1' command is executed.
+17:34:08 INFO  : Context for 'APU' is selected.
+17:34:08 INFO  : Sourcing of 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl' is done.
+17:34:08 INFO  : 'ps7_init' command is executed.
+17:34:08 INFO  : 'ps7_post_config' command is executed.
+17:34:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:34:08 INFO  : The application 'C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:34:08 INFO  : 'configparams force-mem-access 0' command is executed.
+17:34:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248469501" && level==0 && jtag_device_ctx=="jsn-Zed-210248469501-03727093-0"}
+fpga -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/bitstream/DMA_block_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/DMA_block_design_wrapper/export/DMA_block_design_wrapper/hw/DMA_block_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vitis_DMA_new/final_project_hardware/Debug/final_project_hardware.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:34:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:34:09 INFO  : 'con' command is executed.
+17:34:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:34:09 INFO  : Launch script is exported to file 'C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vitis_DMA_new\final_project_hardware_system\_ide\scripts\systemdebugger_final_project_hardware_system_standalone.tcl'

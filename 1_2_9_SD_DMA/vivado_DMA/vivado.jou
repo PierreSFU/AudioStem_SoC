@@ -1,0 +1,253 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 15 13:11:21 2022
+# Process ID: 23352
+# Current directory: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11932 C:\Users\pdrego\Downloads\Final_Project\1_2_9_SD_DMA\vivado_DMA\vivado_DMA.xpr
+# Log file: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado.log
+# Journal file: C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.xpr
+open_hw_manager
+update_compile_order -fileset sources_1
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices -disable_eos_check [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd]
+launch_runs DMA_block_design_VGA_0_0_synth_1 -jobs 16
+wait_on_run DMA_block_design_VGA_0_0_synth_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/DMA_block_design_wrapper.xsa
+validate_bd_design
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  C:/Users/pdrego/Downloads/Final_Project/IP_REPO [current_project]
+update_ip_catalog
+create_bd_cell -type ip -vlnv xilinx.com:user:OLED:1.0 OLED_1
+delete_bd_objs [get_bd_cells OLED_1]
+create_bd_cell -type ip -vlnv sfu.ca:user:design_1_wrapper:1.0 design_1_wrapper_0
+set_property location {5 1705 809} [get_bd_cells design_1_wrapper_0]
+connect_bd_net [get_bd_ports switches] [get_bd_pins design_1_wrapper_0/sys_clock]
+undo
+connect_bd_net [get_bd_ports switches] [get_bd_pins design_1_wrapper_0/switches]
+connect_bd_net [get_bd_pins design_1_wrapper_0/rst] [get_bd_pins util_vector_logic_OLED/Res]
+copy_bd_objs /  [get_bd_cells {clk_wiz_OLED}]
+delete_bd_objs [get_bd_cells clk_wiz_OLED1]
+startgroup
+connect_bd_net [get_bd_ports h_sync] [get_bd_pins design_1_wrapper_0/h_sync]
+connect_bd_net [get_bd_ports v_sync] [get_bd_pins design_1_wrapper_0/h_sync]
+connect_bd_net [get_bd_ports vga_g] [get_bd_pins design_1_wrapper_0/h_sync]
+connect_bd_net [get_bd_ports vga_r] [get_bd_pins design_1_wrapper_0/h_sync]
+connect_bd_net [get_bd_ports vga_b] [get_bd_pins design_1_wrapper_0/h_sync]
+endgroup
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets design_1_wrapper_0_h_sync]
+connect_bd_net [get_bd_ports h_sync] [get_bd_pins design_1_wrapper_0/h_sync]
+connect_bd_net [get_bd_ports v_sync] [get_bd_pins design_1_wrapper_0/v_sync]
+connect_bd_net [get_bd_ports vga_b] [get_bd_pins design_1_wrapper_0/vga_b]
+connect_bd_net [get_bd_ports vga_g] [get_bd_pins design_1_wrapper_0/vga_g]
+connect_bd_net [get_bd_ports vga_r] [get_bd_pins design_1_wrapper_0/vga_r]
+regenerate_bd_layout
+validate_bd_design
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins design_1_wrapper_0/sys_clock]
+undo
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {148.5} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins design_1_wrapper_0/sys_clock]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz/clk_in1]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {New External Port (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz/reset]
+endgroup
+delete_bd_objs [get_bd_nets sys_clock_1]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clk_wiz/clk_in1]
+delete_bd_objs [get_bd_ports sys_clock]
+copy_bd_objs /  [get_bd_cells {util_vector_logic_OLED}]
+connect_bd_net [get_bd_pins clk_wiz/locked] [get_bd_pins util_vector_logic_OLED1/Op1]
+delete_bd_objs [get_bd_nets util_vector_logic_0_Res]
+connect_bd_net [get_bd_pins util_vector_logic_OLED1/Res] [get_bd_pins design_1_wrapper_0/rst]
+connect_bd_net [get_bd_pins util_vector_logic_OLED/Res] [get_bd_pins OLED_0/rst]
+regenerate_bd_layout
+delete_bd_objs [get_bd_cells VGA_0]
+save_bd_design
+reset_run synth_1
+validate_bd_design
+delete_bd_objs [get_bd_nets reset_rtl_1]
+connect_bd_net [get_bd_ports rst] [get_bd_pins clk_wiz/reset]
+delete_bd_objs [get_bd_ports reset_rtl]
+save_bd_design
+validate_bd_design
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+set_property name VGA_0 [get_bd_cells design_1_wrapper_0]
+save_bd_design
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {148.5000} CONFIG.MMCM_DIVCLK_DIVIDE {4} CONFIG.MMCM_CLKFBOUT_MULT_F {37.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.CLKOUT1_JITTER {217.614} CONFIG.CLKOUT1_PHASE_ERROR {245.344}] [get_bd_cells clk_wiz]
+endgroup
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+set_property name util_vector_logic_vga [get_bd_cells util_vector_logic_OLED1]
+set_property name clk_wiz_VGA [get_bd_cells clk_wiz]
+set_property name util_vector_logic_vsga [get_bd_cells util_vector_logic_vga]
+set_property name util_vector_logic_VGA [get_bd_cells util_vector_logic_vsga]
+save_bd_design
+validate_bd_design
+save_bd_design
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+reset_run DMA_block_design_system_ila_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+reset_run DMA_block_design_system_ila_0_0_synth_1
+reset_run DMA_block_design_clk_wiz_2_synth_1
+reset_run DMA_block_design_design_1_wrapper_0_0_synth_1
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {Custom}] [get_bd_cells clk_wiz_VGA]
+endgroup
+save_bd_design
+validate_bd_design
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+delete_bd_objs [get_bd_nets clk_1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins clk_wiz_OLED/clk_in1]
+undo
+save_bd_design
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_OLED/clk_in1]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_VGA/clk_in1]
+endgroup
+delete_bd_objs [get_bd_ports clk]
+save_bd_design
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -fileset [get_filesets sources_1] -inst_template
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+reset_run synth_1
+reset_run DMA_block_design_system_ila_0_0_synth_1
+reset_run DMA_block_design_clk_wiz_2_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {100} CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {100} CONFIG.PCW_EN_CLK1_PORT {1} CONFIG.PCW_EN_CLK2_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+delete_bd_objs [get_bd_ports sys_clock]
+delete_bd_objs [get_bd_nets sys_clock_1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins clk_wiz_OLED/clk_in1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK2] [get_bd_pins clk_wiz_VGA/clk_in1]
+save_bd_design
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+reset_run synth_1
+reset_run DMA_block_design_processing_system7_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+delete_bd_objs [get_bd_nets rst_1]
+delete_bd_objs [get_bd_ports rst]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins clk_wiz_VGA/reset]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins clk_wiz_OLED/reset]
+save_bd_design
+set_property -dict [list CONFIG.FREQ_HZ {100000000}] [get_bd_pins VGA_0/sys_clock]
+startgroup
+endgroup
+save_bd_design
+validate_bd_design
+set_property -dict [list CONFIG.FREQ_HZ {148500000}] [get_bd_pins VGA_0/sys_clock]
+save_bd_design
+validate_bd_design
+copy_bd_objs /  [get_bd_cells {util_vector_logic_VGA}]
+set_property name util_vector_logic_RESET [get_bd_cells util_vector_logic_VGA1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins util_vector_logic_RESET/Op1]
+set_property location {7 2352 688} [get_bd_cells util_vector_logic_RESET]
+disconnect_bd_net /processing_system7_0_FCLK_RESET0_N [get_bd_pins clk_wiz_VGA/reset]
+connect_bd_net [get_bd_pins util_vector_logic_RESET/Res] [get_bd_pins clk_wiz_VGA/reset]
+disconnect_bd_net /processing_system7_0_FCLK_RESET0_N [get_bd_pins clk_wiz_OLED/reset]
+connect_bd_net [get_bd_pins util_vector_logic_RESET/Res] [get_bd_pins clk_wiz_OLED/reset]
+regenerate_bd_layout
+save_bd_design
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"DMA_block_design_i/system_ila_0/inst/ila_lib"}]]
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+delete_bd_objs [get_bd_cells util_vector_logic_RESET]
+connect_bd_net [get_bd_pins rst_ps7_0_100M/peripheral_reset] [get_bd_pins clk_wiz_VGA/reset]
+save_bd_design
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+set_property PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+set_property PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+delete_bd_objs [get_bd_nets clk_wiz_locked] [get_bd_nets util_vector_logic_OLED1_Res] [get_bd_cells util_vector_logic_VGA]
+connect_bd_net [get_bd_pins clk_wiz_VGA/locked] [get_bd_pins VGA_0/rst]
+delete_bd_objs [get_bd_nets clk_wiz_0_locked] [get_bd_nets util_vector_logic_OLED_Res] [get_bd_cells util_vector_logic_OLED]
+connect_bd_net [get_bd_pins clk_wiz_OLED/locked] [get_bd_pins OLED_0/rst]
+undo
+undo
+save_bd_design
+make_wrapper -files [get_files C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.runs/impl_1/DMA_block_design_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/vivado_DMA.srcs/sources_1/bd/DMA_block_design/DMA_block_design.bd}
+create_bd_port -dir I rst
+delete_bd_objs [get_bd_ports rst]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/pdrego/Downloads/Final_Project/1_2_9_SD_DMA/vivado_DMA/DMA_block_design_wrapper.xsa
+update_ip_catalog -rebuild
+create_bd_cell -type ip -vlnv sfu.ca:user:i2s:1.0 i2s_0
+set_property location {5 1692 675} [get_bd_cells i2s_0]
+set_property location {3 913 162} [get_bd_cells i2s_0]
+create_bd_port -dir I bclk
+create_bd_port -dir I lrclk
+connect_bd_net [get_bd_ports bclk] [get_bd_pins i2s_0/bclk]
+connect_bd_net [get_bd_ports lrclk] [get_bd_pins i2s_0/lrclk]
+save_bd_design

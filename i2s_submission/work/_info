@@ -1,0 +1,105 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dU:/ENSC462/Final_Project
+Ei2s
+Z0 w1650066479
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z6 dU:/ENSC462/Final_Project/i2s_submission
+Z7 8U:/ENSC462/Final_Project/i2s_submission/i2s.vhd
+Z8 FU:/ENSC462/Final_Project/i2s_submission/i2s.vhd
+l0
+L5 1
+VQi2ghTFdlfQ3:nQfl3<ei2
+!s100 Z1j?ofI3]FXj;SzKz9hOR2
+Z9 OV;C;2020.1;71
+33
+Z10 !s110 1650070215
+!i10b 1
+Z11 !s108 1650070214.000000
+Z12 !s90 -reportprogress|300|-work|work|-2008|-explicit|U:/ENSC462/Final_Project/i2s_submission/i2s.vhd|
+Z13 !s107 U:/ENSC462/Final_Project/i2s_submission/i2s.vhd|
+!i113 1
+Z14 o-work work -2008 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+R4
+R5
+Z16 DEx4 work 3 i2s 0 22 Qi2ghTFdlfQ3:nQfl3<ei2
+!i122 0
+l51
+L29 203
+Vi8lhSPT2K6ji[iX^ZK?fY1
+!s100 Cch?_B3D6J=]0PkPI]i1C0
+R9
+33
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Etb_i2s
+Z17 w1650063834
+Z18 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R4
+R5
+!i122 1
+R6
+Z19 8U:/ENSC462/Final_Project/i2s_submission/tb_i2s.vhd
+Z20 FU:/ENSC462/Final_Project/i2s_submission/tb_i2s.vhd
+l0
+L4 1
+V167G5bcnAdU]Dn_JM`Fng1
+!s100 MGkhZOm@A6aKX<Tb_0QWP3
+R9
+33
+R10
+!i10b 1
+Z21 !s108 1650070215.000000
+Z22 !s90 -reportprogress|300|-work|work|-2008|-explicit|U:/ENSC462/Final_Project/i2s_submission/tb_i2s.vhd|
+!s107 U:/ENSC462/Final_Project/i2s_submission/tb_i2s.vhd|
+!i113 1
+R14
+R15
+Abehavioral
+R1
+R2
+R3
+R16
+R18
+R4
+R5
+DEx4 work 6 tb_i2s 0 22 167G5bcnAdU]Dn_JM`Fng1
+!i122 1
+l31
+L11 104
+V<42:C0RDQL^d8NG^8hd3>3
+!s100 nR0bPED5HZGf84R<YbRbV0
+R9
+33
+R10
+!i10b 1
+R21
+R22
+Z23 !s107 U:/ENSC462/Final_Project/i2s_submission/tb_i2s.vhd|
+!i113 1
+R14
+R15

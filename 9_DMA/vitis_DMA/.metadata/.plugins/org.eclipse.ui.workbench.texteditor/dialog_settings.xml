@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="&#x09;XAxiDma_IntrDisable(&amp;AxiDma, XAXIDMA_IRQ_ALL_MASK,XAXIDMA_DMA_TO_DEVICE);"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="&#x09;XAxiDma_IntrDisable(&amp;AxiDma, XAXIDMA_IRQ_ALL_MASK,XAXIDMA_DMA_TO_DEVICE);"/>
+			<item value="poll"/>
+			<item value="simple"/>
+			<item value="XPAR_PSU_DDR_0_S_AXI_BASEADDR"/>
+			<item value="IIC_DEVICE_ID"/>
+			<item value="ps7_0_axi_periph"/>
+			<item value="brust"/>
+			<item value="burst"/>
+			<item value="XIIC_STOP"/>
+			<item value="XPAR_IIC_0_BASEADDR"/>
+			<item value="buffer"/>
+			<item value="XIic_Send"/>
+			<item value="RxBufferPtr"/>
+			<item value="burst_"/>
+			<item value="XPAR_AXI_DMA_0_BASEADDR"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1116"/>
+		<item key="DIALOG_Y_ORIGIN" value="337"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
